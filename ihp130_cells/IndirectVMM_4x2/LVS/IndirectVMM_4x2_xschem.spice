@@ -1,0 +1,32 @@
+** sch_path: /home/cwhite324/ASHES-IHP130nm/ihp130_cells/IndirectVMM_4x2/IndirectVMM_4x2.sch
+.subckt IndirectVMM_4x2 Vd_R[0] Vd_R[1] Vd_R[2] Vd_R[3] Vd_P[0] Vd_P[1] Vd_P[2] Vd_P[3] Vg[0] Vg[1] VTUN VSel[0] VSel[1] GND
++ VINJ[0] VINJ[1] Vs[0] Vs[1]
+*.PININFO Vd_R[0:3]:B Vd_P[0:3]:B Vg[0:1]:B VTUN:B VSel[0:1]:B GND:B VINJ[0:1]:B Vs[0:1]:B
+x3 net1_3 net1_2 net1_1 net1_0 net2_3 net2_2 net2_1 net2_0 Vg[0] Vs[0] VTUN VSel[0] VINJ[0] GND net3_3 net3_2 net3_1 net3_0 net4_3
++ net4_2 net4_1 net4_0 net5 IndirectVMM_4x1
+x1 Vd_P[0] Vd_P[1] Vd_P[2] Vd_P[3] Vd_R[0] Vd_R[1] Vd_R[2] Vd_R[3] Vg[1] Vs[1] VTUN VSel[1] VINJ[1] GND net2_3 net2_2 net2_1
++ net2_0 net1_3 net1_2 net1_1 net1_0 net6 IndirectVMM_4x1
+.ends
+
+* expanding   symbol:  IndirectVMM_4x1/IndirectVMM_4x1.sym # of pins=16
+** sym_path: /home/cwhite324/ASHES-IHP130nm/ihp130_cells/IndirectVMM_4x1/IndirectVMM_4x1.sym
+** sch_path: /home/cwhite324/ASHES-IHP130nm/ihp130_cells/IndirectVMM_4x1/IndirectVMM_4x1.sch
+.subckt IndirectVMM_4x1 Vd_P[0] Vd_P[1] Vd_P[2] Vd_P[3] Vd_R[0] Vd_R[1] Vd_R[2] Vd_R[3] Vg Vs VTUN Vsel VINJ GND Vd_Run[0]
++ Vd_Run[1] Vd_Run[2] Vd_Run[3] Vd_Prog[0] Vd_Prog[1] Vd_Prog[2] Vd_Prog[3] ColSel
+*.PININFO Vd_R[0:3]:B Vd_P[0:3]:B Vg:B VTUN:B Vsel:B GND:B VINJ:B Vs:B
+x1 Vs Vg Vsel VTUN Vd_R[0] Vd_P[0] VINJ GND FG_Indirect
+.ends
+
+
+* expanding   symbol:  FG_Indirect/FG_Indirect.sym # of pins=16
+** sym_path: /home/cwhite324/ASHES-IHP130nm/ihp130_cells/FG_Indirect/FG_Indirect.sym
+** sch_path: /home/cwhite324/ASHES-IHP130nm/ihp130_cells/FG_Indirect/FG_Indirect.sch
+.subckt FG_Indirect Vs Vg Vsel VTUN Vd_R Vd_P VINJ GND
+*.PININFO VINJ:B Vsel:B Vg:B Vs:B Vd_R:B Vd_P:B VTUN:B GND:B
+M4 net1 Vsel VINJ VINJ sg13_hv_pmos w=0.42u l=0.5u ng=1 m=1
+M5 Vd_P Vfg net1 VINJ sg13_hv_pmos w=0.42u l=0.5u ng=1 m=1
+M1 Vd_R Vfg Vs VINJ sg13_hv_pmos w=0.42u l=0.5u ng=1 m=1
+XC3 VTUN Vfg cap_cmim w=7.0e-6 l=7.0e-6 m=1
+XC1 Vg Vfg cap_cmim w=7.0e-6 l=7.0e-6 m=1
+.ends
+

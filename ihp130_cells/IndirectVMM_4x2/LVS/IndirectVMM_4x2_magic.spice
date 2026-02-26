@@ -1,0 +1,46 @@
+* NGSPICE file created from IndirectVMM_4x2.ext - technology: ihp-sg13g2
+
+.subckt IndirectVMM_4x1 Vd_P[0] Vd_R[0] Vd_R[1] Vd_P[1] Vd_P[2] Vd_R[2] Vd_R[3] Vd_P[3]
++ Vs VINJ GND Vg VTUN Vsel
+X0 Vmid[2] FG[2] Vd_P[2] VINJ sg13_hv_pmos ad=0 pd=0 as=0.2322p ps=1.94u w=0.42u l=0.5u
+**devattr s=5712,304 d=3388,182
+X1 FG[2] Vg SVaricap l=0.65u w=0.54u
+X2 Vd_P[3] FG[3] Vmid[3] VINJ sg13_hv_pmos ad=0.1638p pd=1.62u as=0 ps=0 w=0.42u l=0.5u
+**devattr s=2856,152 d=5712,304
+X3 Vd_P[0] FG[0] Vmid[0] VINJ sg13_hv_pmos ad=0.1638p pd=1.62u as=0 ps=0 w=0.42u l=0.5u
+**devattr s=2940,154 d=6720,328
+X4 FG[3] Vg SVaricap l=0.65u w=0.54u
+X5 FG[3] VTUN SVaricap l=0.5u w=0.29u
+X6 VINJ Vsel Vmid[2] VINJ sg13_hv_pmos ad=0.48955p pd=4.055u as=0 ps=0 w=0.42u l=0.5u
+**devattr s=3388,182 d=5712,304
+X7 FG[2] VTUN SVaricap l=0.5u w=0.29u
+X8 Vmid[0] Vsel VINJ VINJ sg13_hv_pmos ad=0 pd=0 as=0.48955p ps=4.055u w=0.42u l=0.5u
+**devattr s=5712,304 d=2940,154
+X9 FG[1] VTUN SVaricap l=0.5u w=0.29u
+X10 FG[0] Vg SVaricap l=0.65u w=0.54u
+X11 Vmid[1] FG[1] Vd_P[1] VINJ sg13_hv_pmos ad=0 pd=0 as=0.1512p ps=1.56u w=0.42u l=0.5u
+**devattr s=5712,304 d=3180,170
+X12 Vmid[3] Vsel VINJ VINJ sg13_hv_pmos ad=0 pd=0 as=0.48955p ps=4.055u w=0.42u l=0.5u
+**devattr s=5712,304 d=2856,152
+X13 Vs FG[2] Vd_R[2] VINJ sg13_hv_pmos ad=83.99999f pd=0.82u as=0.1806p ps=1.7u w=0.42u l=0.5u
+**devattr s=5712,304 d=4848,218
+X14 Vs FG[1] Vd_R[1] VINJ sg13_hv_pmos ad=83.99999f pd=0.82u as=0.1428p ps=1.52u w=0.42u l=0.5u
+**devattr s=5712,304 d=4848,218
+X15 FG[0] VTUN SVaricap l=0.5u w=0.29u
+X16 Vd_R[0] FG[0] Vs VINJ sg13_hv_pmos ad=0.1428p pd=1.52u as=83.99999f ps=0.82u w=0.42u l=0.5u
+**devattr s=4848,218 d=5712,304
+X17 VINJ Vsel Vmid[1] VINJ sg13_hv_pmos ad=0.48955p pd=4.055u as=0 ps=0 w=0.42u l=0.5u
+**devattr s=3180,170 d=5712,304
+X18 Vd_R[3] FG[3] Vs VINJ sg13_hv_pmos ad=0.1428p pd=1.52u as=83.99999f ps=0.82u w=0.42u l=0.5u
+**devattr s=4848,218 d=5712,304
+X19 FG[1] Vg SVaricap l=0.65u w=0.54u
+.ends
+
+.subckt IndirectVMM_4x2 Vsel[0] Vs[0] VINJ[0] GND Vg[0] VTUN Vg[1] VINJ[1] Vs[1] Vsel[1]
++ Vd_P[0] Vd_R[0] Vd_R[1] Vd_P[1] Vd_P[2] Vd_R[2] Vd_R[3] Vd_P[3]
+XIndirectVMM_4x1_0 Vd_P[0] Vd_R[0] Vd_R[1] Vd_P[1] Vd_P[2] Vd_R[2] Vd_R[3] Vd_P[3]
++ Vs[0] VINJ[0] GND Vg[0] VTUN Vsel[0] IndirectVMM_4x1
+XIndirectVMM_4x1_1 Vd_P[0] Vd_R[0] Vd_R[1] Vd_P[1] Vd_P[2] Vd_R[2] Vd_R[3] Vd_P[3]
++ Vs[1] VINJ[1] GND Vg[1] VTUN Vsel[1] IndirectVMM_4x1
+.ends
+

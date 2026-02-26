@@ -39,7 +39,7 @@ rect -16 156 7 202
 rect 998 165 1013 195
 rect -16 87 7 133
 rect 998 95 1013 125
-use IndirectVMM_4x1  IndirectVMM_4x1_0 ~/ASHES-IHP130nm/ihp130-cells/IndirectVMM_4x1
+use IndirectVMM_4x1  IndirectVMM_4x1_0 ~/ASHES-IHP130nm/ihp130_cells/IndirectVMM_4x1
 timestamp 1771701787
 transform 1 0 -526 0 1 -152
 box 510 155 1524 805

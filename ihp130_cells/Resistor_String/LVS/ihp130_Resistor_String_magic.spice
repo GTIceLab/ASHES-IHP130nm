@@ -1,0 +1,13 @@
+* NGSPICE file created from ihp130_Resistor_String.ext - technology: ihp-sg13g2
+
+.subckt ihp130_Resistor_String VREFout VREFin
+X0 a_1962_966# VREFin rsil l=10u w=0.59u
+X1 a_1962_336# a_4048_180# rsil l=10u w=0.59u
+X2 a_1962_652# a_4048_810# rsil l=10u w=0.59u
+X3 a_1962_22# a_4048_180# rsil l=10u w=0.59u
+X4 a_1962_652# a_4048_494# rsil l=10u w=0.59u
+X5 a_1962_336# a_4048_494# rsil l=10u w=0.59u
+X6 a_1962_966# a_4048_810# rsil l=10u w=0.59u
+X7 a_1962_22# VREFout rsil l=10u w=0.59u
+.ends
+

@@ -1,0 +1,334 @@
+timestamp 1771708976
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11
+use IndirectVMM_4x1 IndirectVMM_4x1_1 -1 0 5074 0 1 -304
+use IndirectVMM_4x1 IndirectVMM_4x1_0 1 0 -1052 0 1 -304
+port "Vd_P[3]" 18 -32 174 14 266 m3
+port "Vd_R[3]" 17 -32 312 14 404 m3
+port "Vd_R[2]" 16 -32 450 14 542 m3
+port "Vd_P[2]" 15 -32 588 14 680 m3
+port "Vd_P[1]" 14 -32 726 14 818 m3
+port "Vd_R[1]" 13 -32 864 14 956 m3
+port "Vd_R[0]" 12 -32 1002 14 1094 m3
+port "Vd_P[0]" 11 -32 1140 14 1232 m3
+port "Vsel[1]" 10 3842 1256 3922 1306 m2
+port "Vs[1]" 9 3716 1256 3796 1306 m2
+port "VINJ[1]" 8 3594 1256 3674 1306 m2
+port "GND" 4 3116 1256 3196 1306 m2
+port "Vg[1]" 7 2850 1256 2930 1306 m2
+port "GND" 4 2566 1256 2646 1306 m2
+port "VTUN" 6 2162 1256 2242 1306 m2
+port "VTUN" 6 1780 1256 1860 1306 m2
+port "GND" 4 1376 1256 1456 1306 m2
+port "Vg[0]" 5 1092 1256 1172 1306 m2
+port "GND" 4 826 1256 906 1306 m2
+port "VINJ[0]" 3 348 1256 428 1306 m2
+port "Vs[0]" 2 226 1256 306 1306 m2
+port "Vsel[0]" 1 100 1256 180 1306 m2
+node "m3_1996_190#" 0 22.8637 1996 190 m3 0 0 0 0 0 0 0 0 1800 180 0 0 0 0 0 0 0 0
+node "Vd_P[3]" 0 37.5768 -32 174 m3 0 0 0 0 0 0 0 0 4232 276 0 0 0 0 0 0 0 0
+node "m3_1996_330#" 0 16.7429 1996 330 m3 0 0 0 0 0 0 0 0 1800 180 0 0 0 0 0 0 0 0
+node "Vd_R[3]" 0 30.6188 -32 312 m3 0 0 0 0 0 0 0 0 4232 276 0 0 0 0 0 0 0 0
+node "m3_1996_466#" 0 12.0221 1996 466 m3 0 0 0 0 0 0 0 0 1800 180 0 0 0 0 0 0 0 0
+node "Vd_R[2]" 0 30.3251 -32 450 m3 0 0 0 0 0 0 0 0 4232 276 0 0 0 0 0 0 0 0
+node "m3_1996_604#" 0 18.8112 1996 604 m3 0 0 0 0 0 0 0 0 1800 180 0 0 0 0 0 0 0 0
+node "Vd_P[2]" 0 30.6188 -32 588 m3 0 0 0 0 0 0 0 0 4232 276 0 0 0 0 0 0 0 0
+node "m3_1996_742#" 0 18.8112 1996 742 m3 0 0 0 0 0 0 0 0 1800 180 0 0 0 0 0 0 0 0
+node "Vd_P[1]" 0 30.6188 -32 726 m3 0 0 0 0 0 0 0 0 4232 276 0 0 0 0 0 0 0 0
+node "m3_1996_880#" 0 16.7429 1996 880 m3 0 0 0 0 0 0 0 0 1800 180 0 0 0 0 0 0 0 0
+node "Vd_R[1]" 0 30.6188 -32 864 m3 0 0 0 0 0 0 0 0 4232 276 0 0 0 0 0 0 0 0
+node "m3_1996_1018#" 0 18.8112 1996 1018 m3 0 0 0 0 0 0 0 0 1800 180 0 0 0 0 0 0 0 0
+node "Vd_R[0]" 0 30.6188 -32 1002 m3 0 0 0 0 0 0 0 0 4232 276 0 0 0 0 0 0 0 0
+node "m3_1996_1156#" 0 23.1921 1996 1156 m3 0 0 0 0 0 0 0 0 1800 180 0 0 0 0 0 0 0 0
+node "Vd_P[0]" 0 37.5768 -32 1140 m3 0 0 0 0 0 0 0 0 4232 276 0 0 0 0 0 0 0 0
+node "Vsel[1]" 0 38.818 3842 1256 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "Vs[1]" 0 30.5405 3716 1256 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "VINJ[1]" 0 33.5473 3594 1256 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "GND" 0 34.9311 3116 1256 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "Vg[1]" 0 33.4291 2850 1256 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "GND" 0 34.5022 2566 1256 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "VTUN" 0 33.8369 2162 1256 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "VTUN" 0 33.8369 1780 1256 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "GND" 0 34.5195 1376 1256 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "Vg[0]" 0 33.4291 1092 1256 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "GND" 0 34.9311 826 1256 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "VINJ[0]" 0 33.5473 348 1256 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "Vs[0]" 0 30.5405 226 1256 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "Vsel[0]" 0 38.818 100 1256 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "m1_1786_348#" 1 143.699 1786 348 m1 0 0 0 0 27900 1024 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_1444_468#" 2 412.84 1444 468 m1 0 0 0 0 70556 2400 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_1786_858#" 1 179.625 1786 858 m1 0 0 0 0 28800 1028 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_1996_6#" 0 0 1996 6 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_1786_858#" "m3_1996_1156#" 0.167457
+cap "GND" "Vg[1]" 11.3836
+cap "Vd_P[1]" "Vd_P[2]" 45.6114
+cap "w_1996_6#" "m3_1996_1018#" 1.09826
+cap "VTUN" "m1_1786_858#" 1.07727
+cap "GND" "VINJ[0]" 5.22717
+cap "m1_1444_468#" "m3_1996_742#" 0.175019
+cap "Vd_R[2]" "m1_1444_468#" 0.246538
+cap "Vd_R[2]" "Vd_P[2]" 45.6114
+cap "m3_1996_1018#" "m3_1996_1156#" 16.1481
+cap "m1_1786_348#" "VTUN" 0.136176
+cap "m3_1996_604#" "m3_1996_742#" 16.1481
+cap "m3_1996_330#" "m3_1996_190#" 15.6996
+cap "w_1996_6#" "m3_1996_330#" 0.648648
+cap "Vsel[0]" "Vs[0]" 51.2263
+cap "m1_1444_468#" "m1_1786_858#" 40.6627
+cap "w_1996_6#" "m3_1996_190#" 1.47639
+cap "m1_1444_468#" "m3_1996_466#" 13.4531
+cap "m1_1444_468#" "GND" 0.0444446
+cap "VTUN" "GND" 6.44355
+cap "w_1996_6#" "m3_1996_1156#" 1.14092
+cap "m3_1996_604#" "m1_1786_858#" 0.181183
+cap "m3_1996_604#" "m3_1996_466#" 16.1481
+cap "Vg[0]" "GND" 10.3487
+cap "w_1996_6#" "VTUN" 0.280834
+cap "VINJ[1]" "GND" 5.22717
+cap "m1_1444_468#" "GND" 0.0592594
+cap "VTUN" "m1_1786_858#" 1.07727
+cap "VTUN" "GND" 6.44355
+cap "w_1996_6#" "m1_1444_468#" 5.61518
+cap "w_1996_6#" "m3_1996_604#" 1.08402
+cap "m1_1786_348#" "m3_1996_466#" 0.167211
+cap "Vs[1]" "VINJ[1]" 56.9181
+cap "m1_1444_468#" "VTUN" 0.203328
+cap "Vd_R[2]" "Vd_R[3]" 45.6114
+cap "w_1996_6#" "VTUN" 0.280834
+cap "m3_1996_742#" "m3_1996_880#" 16.1481
+cap "Vd_P[1]" "Vd_R[1]" 45.6114
+cap "m3_1996_742#" "m1_1786_858#" 0.396322
+cap "Vd_P[0]" "Vd_R[0]" 45.6114
+cap "VINJ[0]" "Vs[0]" 56.9181
+cap "m3_1996_330#" "m1_1786_348#" 5.43348
+cap "m3_1996_604#" "m1_1444_468#" 0.248716
+cap "m1_1786_348#" "m3_1996_190#" 0.21111
+cap "m1_1786_858#" "m3_1996_880#" 5.44979
+cap "w_1996_6#" "m1_1786_348#" 5.69318
+cap "VTUN" "VTUN" 6.92247
+cap "Vd_R[0]" "Vd_R[1]" 45.6114
+cap "m3_1996_1018#" "m3_1996_880#" 16.1481
+cap "m1_1786_348#" "VTUN" 0.136176
+cap "m1_1444_468#" "VTUN" 0.203328
+cap "m1_1786_858#" "m3_1996_1018#" 0.211635
+cap "GND" "Vg[1]" 10.3487
+cap "w_1996_6#" "m3_1996_742#" 1.01978
+cap "m1_1444_468#" "m1_1786_348#" 269.391
+cap "w_1996_6#" "m3_1996_880#" 0.641474
+cap "Vs[1]" "Vsel[1]" 51.2263
+cap "m3_1996_330#" "m3_1996_466#" 16.6231
+cap "w_1996_6#" "m1_1786_858#" 8.4307
+cap "Vd_P[3]" "Vd_R[3]" 45.6114
+cap "w_1996_6#" "m3_1996_466#" 0.483676
+cap "Vg[0]" "GND" 11.3836
+cap "IndirectVMM_4x1_1/Vd_P[2]" "IndirectVMM_4x1_1/VTUN" -0.00396549
+cap "IndirectVMM_4x1_1/Vd_P[3]" "IndirectVMM_4x1_1/VTUN" 0.144668
+cap "IndirectVMM_4x1_0/FG[1]" "IndirectVMM_4x1_1/Vg" 0.00671095
+cap "IndirectVMM_4x1_1/Vd_R[1]" "IndirectVMM_4x1_0/FG[1]" 0.00472162
+cap "IndirectVMM_4x1_0/VINJ" "IndirectVMM_4x1_0/Vs" -56.9181
+cap "IndirectVMM_4x1_1/FG[3]" "IndirectVMM_4x1_1/Vd_R[3]" 0.0555621
+cap "IndirectVMM_4x1_0/FG[0]" "IndirectVMM_4x1_1/GND" 0.00998241
+cap "IndirectVMM_4x1_1/Vd_R[2]" "IndirectVMM_4x1_1/Vd_P[2]" -45.672
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_0/FG[2]" 0.789588
+cap "IndirectVMM_4x1_1/FG[2]" "IndirectVMM_4x1_0/FG[2]" 0.164866
+cap "IndirectVMM_4x1_0/FG[3]" "IndirectVMM_4x1_1/VTUN" 0.310039
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_0/Vg" -16.5166
+cap "IndirectVMM_4x1_0/FG[0]" "IndirectVMM_4x1_1/Vd_P[0]" 0.0062788
+cap "IndirectVMM_4x1_0/FG[1]" "IndirectVMM_4x1_1/VTUN" 0.773164
+cap "IndirectVMM_4x1_1/Vd_P[3]" "IndirectVMM_4x1_1/Vd_R[3]" -45.6114
+cap "IndirectVMM_4x1_0/FG[0]" "IndirectVMM_4x1_1/FG[0]" 0.12365
+cap "IndirectVMM_4x1_0/VINJ" "IndirectVMM_4x1_1/VTUN" 0.307435
+cap "IndirectVMM_4x1_0/Vg" "IndirectVMM_4x1_1/Vd_P[0]" 0.0851311
+cap "IndirectVMM_4x1_0/FG[0]" "IndirectVMM_4x1_1/Vg" 0.00287612
+cap "IndirectVMM_4x1_0/FG[0]" "IndirectVMM_4x1_1/Vd_R[1]" -0.0148486
+cap "IndirectVMM_4x1_1/Vd_P[2]" "IndirectVMM_4x1_0/FG[2]" -0.0161632
+cap "IndirectVMM_4x1_0/FG[3]" "IndirectVMM_4x1_1/Vd_R[3]" 0.0237248
+cap "IndirectVMM_4x1_0/FG[2]" "IndirectVMM_4x1_1/Vg" 0.00383483
+cap "IndirectVMM_4x1_1/Vd_R[0]" "IndirectVMM_4x1_1/Vd_P[0]" -45.6114
+cap "IndirectVMM_4x1_1/Vd_P[3]" "IndirectVMM_4x1_0/Vg" 0.151835
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/Vd_P[2]" 0.202995
+cap "IndirectVMM_4x1_0/Vg" "IndirectVMM_4x1_1/Vg" 0.0969515
+cap "IndirectVMM_4x1_1/Vd_R[1]" "IndirectVMM_4x1_0/Vg" 0.190635
+cap "IndirectVMM_4x1_1/Vd_P[1]" "IndirectVMM_4x1_1/Vd_P[2]" -45.6114
+cap "IndirectVMM_4x1_0/Vsel" "IndirectVMM_4x1_1/Vd_P[2]" 0.0367387
+cap "IndirectVMM_4x1_1/Vd_R[3]" "IndirectVMM_4x1_1/VTUN" 0.187074
+cap "IndirectVMM_4x1_1/Vd_R[1]" "IndirectVMM_4x1_1/Vd_P[1]" -45.6114
+cap "IndirectVMM_4x1_1/Vd_R[0]" "IndirectVMM_4x1_1/FG[0]" 0.0716987
+cap "IndirectVMM_4x1_1/Vd_P[3]" "IndirectVMM_4x1_1/FG[3]" 0.0033043
+cap "IndirectVMM_4x1_0/Vsel" "IndirectVMM_4x1_0/Vs" -51.2263
+cap "IndirectVMM_4x1_0/FG[0]" "IndirectVMM_4x1_1/VTUN" 0.300101
+cap "IndirectVMM_4x1_1/Vd_R[1]" "IndirectVMM_4x1_1/Vd_R[0]" -45.6114
+cap "IndirectVMM_4x1_1/Vd_R[2]" "IndirectVMM_4x1_1/Vd_R[3]" -45.6114
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_0/FG[3]" 0.00998241
+cap "IndirectVMM_4x1_0/FG[2]" "IndirectVMM_4x1_1/VTUN" 0.481315
+cap "IndirectVMM_4x1_0/FG[3]" "IndirectVMM_4x1_1/FG[3]" 0.12365
+cap "IndirectVMM_4x1_0/Vg" "IndirectVMM_4x1_1/VTUN" 1.61699
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_0/FG[1]" 0.0232923
+cap "IndirectVMM_4x1_1/FG[1]" "IndirectVMM_4x1_0/FG[1]" 0.288516
+cap "IndirectVMM_4x1_1/Vd_R[2]" "IndirectVMM_4x1_0/FG[2]" -0.156973
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_0/VINJ" -5.22717
+cap "IndirectVMM_4x1_0/VINJ" "IndirectVMM_4x1_1/Vd_P[1]" 0.0188542
+cap "IndirectVMM_4x1_0/VINJ" "IndirectVMM_4x1_1/FG[1]" 0.0232041
+cap "IndirectVMM_4x1_0/Vsel" "IndirectVMM_4x1_1/VTUN" 0.395582
+cap "IndirectVMM_4x1_1/Vd_R[0]" "IndirectVMM_4x1_1/VTUN" 0.0849956
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/Vd_R[2]" -0.209018
+cap "IndirectVMM_4x1_1/Vd_P[0]" "IndirectVMM_4x1_1/VTUN" 0.135398
+cap "IndirectVMM_4x1_0/VINJ" "IndirectVMM_4x1_1/Vd_P[0]" 0.00211115
+cap "IndirectVMM_4x1_0/FG[3]" "IndirectVMM_4x1_1/Vg" 0.00287612
+cap "IndirectVMM_4x1_1/FG[0]" "IndirectVMM_4x1_1/VTUN" 20.3571
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/FG[3]" 5.88777
+cap "IndirectVMM_4x1_1/Vd_P[3]" "IndirectVMM_4x1_1/Vd_R[3]" 1.29674e-13
+cap "IndirectVMM_4x1_1/VTUN" "IndirectVMM_4x1_0/FG[2]" -5.48761
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_0/Vg" -4.78336
+cap "IndirectVMM_4x1_1/Vd_P[1]" "IndirectVMM_4x1_1/Vd_P[2]" -2.84217e-14
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/Vd_P[1]" 4.8072
+cap "IndirectVMM_4x1_0/FG[2]" "IndirectVMM_4x1_1/Vd_R[2]" -9.00318
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/Vmid[2]" 0.017086
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_0/FG[0]" 1.24534
+cap "IndirectVMM_4x1_1/VTUN" "IndirectVMM_4x1_1/Vd_R[1]" 3.8895
+cap "IndirectVMM_4x1_1/FG[2]" "IndirectVMM_4x1_0/FG[2]" 23.6089
+cap "IndirectVMM_4x1_1/Vd_R[0]" "IndirectVMM_4x1_1/Vd_P[0]" -2.84217e-14
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_0/Vmid[2]" 0.0169707
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/Vd_P[2]" 7.28877
+cap "IndirectVMM_4x1_1/VTUN" "IndirectVMM_4x1_0/FG[1]" 22.0321
+cap "IndirectVMM_4x1_0/FG[3]" "IndirectVMM_4x1_1/Vd_R[3]" -0.183143
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/Vsel" 0.0654961
+cap "IndirectVMM_4x1_1/VTUN" "IndirectVMM_4x1_1/Vd_R[3]" 3.77211
+cap "IndirectVMM_4x1_1/FG[0]" "IndirectVMM_4x1_0/Vg" 0.00287612
+cap "IndirectVMM_4x1_1/Vd_R[0]" "IndirectVMM_4x1_1/VTUN" 6.99749
+cap "IndirectVMM_4x1_0/FG[1]" "IndirectVMM_4x1_1/Vd_R[2]" -0.154757
+cap "IndirectVMM_4x1_1/Vd_R[3]" "IndirectVMM_4x1_1/Vd_R[2]" 1.13687e-13
+cap "IndirectVMM_4x1_1/FG[0]" "IndirectVMM_4x1_0/FG[0]" 23.5676
+cap "IndirectVMM_4x1_1/FG[1]" "IndirectVMM_4x1_1/Vd_R[1]" -0.176903
+cap "IndirectVMM_4x1_1/Vd_P[3]" "IndirectVMM_4x1_0/FG[3]" 0.0586076
+cap "IndirectVMM_4x1_1/VTUN" "IndirectVMM_4x1_1/Vd_P[3]" 7.10697
+cap "IndirectVMM_4x1_1/FG[1]" "IndirectVMM_4x1_0/FG[1]" 23.7325
+cap "IndirectVMM_4x1_1/FG[2]" "IndirectVMM_4x1_1/Vd_R[3]" -0.181625
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/FG[0]" 1.25532
+cap "IndirectVMM_4x1_1/Vd_P[2]" "IndirectVMM_4x1_0/FG[2]" -0.174622
+cap "IndirectVMM_4x1_1/Vd_P[1]" "IndirectVMM_4x1_1/Vd_R[1]" -2.84217e-14
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_0/FG[2]" 77.2699
+cap "IndirectVMM_4x1_1/FG[3]" "IndirectVMM_4x1_1/Vd_R[3]" -0.131331
+cap "IndirectVMM_4x1_1/VTUN" "IndirectVMM_4x1_1/Vd_P[0]" 7.19952
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_0/Vsel" 0.0650314
+cap "IndirectVMM_4x1_1/VTUN" "IndirectVMM_4x1_0/FG[3]" 22.2654
+cap "IndirectVMM_4x1_0/FG[0]" "IndirectVMM_4x1_1/Vd_R[1]" -0.181759
+cap "IndirectVMM_4x1_1/Vd_P[1]" "IndirectVMM_4x1_0/FG[1]" 0.0837252
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/VINJ" 0.724164
+cap "IndirectVMM_4x1_1/Vd_R[0]" "IndirectVMM_4x1_0/FG[0]" 0.0837252
+cap "IndirectVMM_4x1_1/FG[3]" "IndirectVMM_4x1_1/Vd_P[3]" 0.0586076
+cap "IndirectVMM_4x1_1/VTUN" "IndirectVMM_4x1_1/Vd_R[2]" 4.56399
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/Vd_R[1]" 2.33619
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_0/FG[1]" 9.12689
+cap "IndirectVMM_4x1_1/FG[1]" "IndirectVMM_4x1_1/VTUN" 22.8053
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/Vd_R[3]" 3.98601
+cap "IndirectVMM_4x1_1/FG[2]" "IndirectVMM_4x1_1/VTUN" -5.15634
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/Vd_R[0]" 1.7008
+cap "IndirectVMM_4x1_1/FG[1]" "IndirectVMM_4x1_1/Vd_R[2]" -0.157271
+cap "IndirectVMM_4x1_1/FG[2]" "IndirectVMM_4x1_1/Vd_R[2]" -9.21299
+cap "IndirectVMM_4x1_1/FG[3]" "IndirectVMM_4x1_0/FG[3]" 23.5676
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/Vd_P[3]" 3.22142
+cap "IndirectVMM_4x1_1/VTUN" "IndirectVMM_4x1_1/FG[3]" 22.529
+cap "IndirectVMM_4x1_1/FG[0]" "IndirectVMM_4x1_1/Vd_R[1]" -0.181759
+cap "IndirectVMM_4x1_1/Vd_P[1]" "IndirectVMM_4x1_1/VTUN" 8.01384
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/Vg" -4.776
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/Vs" 0.0263177
+cap "IndirectVMM_4x1_0/FG[0]" "IndirectVMM_4x1_1/VTUN" 20.0929
+cap "IndirectVMM_4x1_1/Vd_R[0]" "IndirectVMM_4x1_1/FG[0]" 0.0837252
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_0/Vs" 0.026138
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/Vd_P[0]" 1.24516
+cap "IndirectVMM_4x1_1/FG[1]" "IndirectVMM_4x1_0/Vg" 0.00671095
+cap "IndirectVMM_4x1_0/FG[2]" "IndirectVMM_4x1_1/Vd_R[3]" -0.181625
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_0/FG[3]" 5.86866
+cap "IndirectVMM_4x1_1/Vd_P[1]" "IndirectVMM_4x1_1/FG[1]" 0.0837252
+cap "IndirectVMM_4x1_1/FG[2]" "IndirectVMM_4x1_0/Vg" 0.00383483
+cap "IndirectVMM_4x1_1/Vd_P[2]" "IndirectVMM_4x1_1/VTUN" 8.73269
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_0/VINJ" 0.71884
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/VTUN" 211.812
+cap "IndirectVMM_4x1_1/Vd_P[2]" "IndirectVMM_4x1_1/Vd_R[2]" -2.84217e-14
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/Vd_R[2]" 26.6712
+cap "IndirectVMM_4x1_0/FG[1]" "IndirectVMM_4x1_1/Vd_R[1]" -0.181625
+cap "IndirectVMM_4x1_0/Vg" "IndirectVMM_4x1_1/FG[3]" 0.00287612
+cap "IndirectVMM_4x1_1/Vd_R[0]" "IndirectVMM_4x1_1/Vd_R[1]" -2.84217e-14
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/FG[1]" 9.1592
+cap "IndirectVMM_4x1_1/Vd_P[2]" "IndirectVMM_4x1_1/FG[2]" -0.174622
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/FG[2]" 78.2179
+cap "IndirectVMM_4x1_1/Vd_P[2]" "IndirectVMM_4x1_1/VTUN" -0.00396549
+cap "IndirectVMM_4x1_1/VTUN" "IndirectVMM_4x1_1/Vd_R[3]" 0.187074
+cap "IndirectVMM_4x1_1/Vsel" "IndirectVMM_4x1_1/VTUN" 0.395582
+cap "IndirectVMM_4x1_1/Vg" "IndirectVMM_4x1_1/GND" -16.5166
+cap "IndirectVMM_4x1_1/Vd_P[3]" "IndirectVMM_4x1_0/FG[3]" 0.0033043
+cap "IndirectVMM_4x1_1/VINJ" "IndirectVMM_4x1_1/Vd_P[1]" 0.0188542
+cap "IndirectVMM_4x1_1/Vd_P[2]" "IndirectVMM_4x1_1/FG[2]" -0.0161632
+cap "IndirectVMM_4x1_1/Vg" "IndirectVMM_4x1_1/VTUN" 1.61699
+cap "IndirectVMM_4x1_1/Vd_P[3]" "IndirectVMM_4x1_1/VTUN" 0.144668
+cap "IndirectVMM_4x1_1/Vd_P[3]" "IndirectVMM_4x1_1/Vg" 0.151835
+cap "IndirectVMM_4x1_1/VINJ" "IndirectVMM_4x1_1/Vs" -56.9181
+cap "IndirectVMM_4x1_1/VINJ" "IndirectVMM_4x1_1/Vd_P[0]" 0.00211115
+cap "IndirectVMM_4x1_1/GND" "IndirectVMM_4x1_1/FG[2]" -1.42109e-14
+cap "IndirectVMM_4x1_1/VTUN" "IndirectVMM_4x1_1/Vd_R[0]" 0.0849956
+cap "IndirectVMM_4x1_1/VTUN" "IndirectVMM_4x1_1/FG[2]" 0.129858
+cap "IndirectVMM_4x1_1/Vd_P[2]" "IndirectVMM_4x1_1/Vd_R[2]" -0.0614706
+cap "IndirectVMM_4x1_1/FG[0]" "IndirectVMM_4x1_1/Vd_R[1]" -0.0148486
+cap "IndirectVMM_4x1_1/FG[0]" "IndirectVMM_4x1_1/Vd_P[0]" 0.0062788
+cap "IndirectVMM_4x1_1/Vg" "IndirectVMM_4x1_0/Vg" 0.0969515
+cap "IndirectVMM_4x1_0/FG[0]" "IndirectVMM_4x1_1/Vd_R[0]" 0.0716987
+cap "IndirectVMM_4x1_1/VINJ" "IndirectVMM_4x1_1/GND" -5.22717
+cap "IndirectVMM_4x1_1/VINJ" "IndirectVMM_4x1_0/FG[1]" 0.0232041
+cap "IndirectVMM_4x1_1/Vd_R[2]" "IndirectVMM_4x1_1/GND" 0.00787651
+cap "IndirectVMM_4x1_1/Vd_R[3]" "IndirectVMM_4x1_1/FG[3]" -0.0280866
+cap "IndirectVMM_4x1_1/VTUN" "IndirectVMM_4x1_1/VINJ" 0.307435
+cap "IndirectVMM_4x1_1/Vsel" "IndirectVMM_4x1_1/Vs" -51.2263
+cap "IndirectVMM_4x1_1/Vd_P[2]" "IndirectVMM_4x1_1/GND" 0.203634
+cap "IndirectVMM_4x1_1/VTUN" "IndirectVMM_4x1_1/FG[0]" 0.0359146
+cap "IndirectVMM_4x1_1/Vd_P[2]" "IndirectVMM_4x1_1/Vsel" 0.0367387
+cap "IndirectVMM_4x1_1/VTUN" "IndirectVMM_4x1_1/FG[3]" 0.0464464
+cap "IndirectVMM_4x1_1/VTUN" "IndirectVMM_4x1_1/Vd_P[0]" 0.135398
+cap "IndirectVMM_4x1_1/Vd_R[3]" "IndirectVMM_4x1_0/FG[3]" 0.0555621
+cap "IndirectVMM_4x1_1/Vg" "IndirectVMM_4x1_1/Vd_R[1]" 0.190635
+cap "IndirectVMM_4x1_1/Vg" "IndirectVMM_4x1_1/Vd_P[0]" 0.0851311
+merge "IndirectVMM_4x1_0/Vd_P[1]" "Vd_P[1]" -68.2412 0 0 0 0 0 0 0 0 -4232 -516 0 0 0 0 0 0 0 0
+merge "Vd_P[1]" "IndirectVMM_4x1_1/Vd_P[1]"
+merge "IndirectVMM_4x1_1/Vd_P[1]" "m3_1996_742#"
+merge "IndirectVMM_4x1_0/VTUN" "IndirectVMM_4x1_1/VTUN" -870.949 0 0 0 0 -16632 -1032 -8000 -520 0 0 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_1/VTUN" "VTUN"
+merge "VTUN" "m1_1786_348#"
+merge "m1_1786_348#" "m1_1786_858#"
+merge "m1_1786_858#" "w_1996_6#"
+merge "IndirectVMM_4x1_0/GND" "IndirectVMM_4x1_1/GND" -419.706 0 0 0 0 -1440 -328 -16000 -1040 0 0 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_1/GND" "VSUB"
+merge "VSUB" "GND"
+merge "GND" "m1_1444_468#"
+merge "IndirectVMM_4x1_0/VINJ" "VINJ[0]" -33.8811 0 0 0 0 0 0 -4000 -260 0 0 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/Vd_R[3]" "Vd_R[3]" -66.6961 0 0 0 0 0 0 0 0 -4232 -516 0 0 0 0 0 0 0 0
+merge "Vd_R[3]" "IndirectVMM_4x1_1/Vd_R[3]"
+merge "IndirectVMM_4x1_1/Vd_R[3]" "m3_1996_330#"
+merge "IndirectVMM_4x1_0/Vd_R[2]" "Vd_R[2]" -64.3307 0 0 0 0 0 0 0 0 -4232 -516 0 0 0 0 0 0 0 0
+merge "Vd_R[2]" "IndirectVMM_4x1_1/Vd_R[2]"
+merge "IndirectVMM_4x1_1/Vd_R[2]" "m3_1996_466#"
+merge "IndirectVMM_4x1_0/Vd_R[1]" "Vd_R[1]" -66.1729 0 0 0 0 0 0 0 0 -4232 -516 0 0 0 0 0 0 0 0
+merge "Vd_R[1]" "IndirectVMM_4x1_1/Vd_R[1]"
+merge "IndirectVMM_4x1_1/Vd_R[1]" "m3_1996_880#"
+merge "IndirectVMM_4x1_0/Vd_R[0]" "Vd_R[0]" -68.5939 0 0 0 0 0 0 0 0 -4232 -516 0 0 0 0 0 0 0 0
+merge "Vd_R[0]" "IndirectVMM_4x1_1/Vd_R[0]"
+merge "IndirectVMM_4x1_1/Vd_R[0]" "m3_1996_1018#"
+merge "IndirectVMM_4x1_0/Vs" "Vs[0]" -30.5405 0 0 0 0 0 0 -4000 -260 0 0 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/Vd_P[3]" "Vd_P[3]" -75.5001 0 0 0 0 0 0 0 0 -4232 -516 0 0 0 0 0 0 0 0
+merge "Vd_P[3]" "IndirectVMM_4x1_1/Vd_P[3]"
+merge "IndirectVMM_4x1_1/Vd_P[3]" "m3_1996_190#"
+merge "IndirectVMM_4x1_1/Vg" "Vg[1]" -35.1557 0 0 0 0 0 0 -4000 -260 0 0 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_1/Vsel" "Vsel[1]" -39.1844 0 0 0 0 0 0 -4000 -260 0 0 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/Vd_P[2]" "Vd_P[2]" -69.2889 0 0 0 0 0 0 0 0 -4232 -516 0 0 0 0 0 0 0 0
+merge "Vd_P[2]" "IndirectVMM_4x1_1/Vd_P[2]"
+merge "IndirectVMM_4x1_1/Vd_P[2]" "m3_1996_604#"
+merge "IndirectVMM_4x1_1/VINJ" "VINJ[1]" -33.8811 0 0 0 0 0 0 -4000 -260 0 0 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/Vg" "Vg[0]" -35.1557 0 0 0 0 0 0 -4000 -260 0 0 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/Vd_P[0]" "Vd_P[0]" -75.47 0 0 0 0 0 0 0 0 -4232 -516 0 0 0 0 0 0 0 0
+merge "Vd_P[0]" "IndirectVMM_4x1_1/Vd_P[0]"
+merge "IndirectVMM_4x1_1/Vd_P[0]" "m3_1996_1156#"
+merge "IndirectVMM_4x1_1/Vs" "Vs[1]" -30.5405 0 0 0 0 0 0 -4000 -260 0 0 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/Vsel" "Vsel[0]" -39.1844 0 0 0 0 0 0 -4000 -260 0 0 0 0 0 0 0 0 0 0

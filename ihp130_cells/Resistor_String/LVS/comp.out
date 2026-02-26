@@ -1,0 +1,75 @@
+
+Class ihp130_Resistor_String (0):  Merged 7 series devices.
+Class ihp130_resistor_string (1):  Merged 3 series devices.
+Subcircuit summary:
+Circuit 1: ihp130_Resistor_String          |Circuit 2: ihp130_resistor_string          
+-------------------------------------------|-------------------------------------------
+rsil (8->1)                                |(no matching element)                      
+(no matching element)                      |r (8->5)                                   
+Number of devices: 1 **Mismatch**          |Number of devices: 5 **Mismatch**          
+Number of nets: 2 **Mismatch**             |Number of nets: 6 **Mismatch**             
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: ihp130_Resistor_String          |Circuit 2: ihp130_resistor_string          
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: Node[0]                               
+                                           |  r/(end_a|end_b) = 2                      
+                                           |                                           
+(no matching net)                          |Net: Node[3]                               
+                                           |  r/(end_a|end_b) = 2                      
+                                           |                                           
+(no matching net)                          |Net: Node[1]                               
+                                           |  r/(end_a|end_b) = 2                      
+                                           |                                           
+(no matching net)                          |Net: Node[2]                               
+                                           |  r/(end_a|end_b) = 2                      
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VREFout                               |Net: VREFout                               
+  rsil/(1|2) = 1                           |  r/(end_a|end_b) = 1                      
+                                           |                                           
+Net: VREFin                                |Net: VREFin                                
+  rsil/(1|2) = 1                           |  r/(end_a|end_b) = 1                      
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: ihp130_Resistor_String          |Circuit 2: ihp130_resistor_string          
+
+---------------------------------------------------------------------------------------
+Instance: rsil:2                           |Instance: r:0                              
+  (1,2) = (1,1)                            |  (end_a,end_b) = (2,1)                    
+                                           |                                           
+(no matching instance)                     |Instance: r:7                              
+                                           |  (end_a,end_b) = (2,1)                    
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: r:1                              
+                                           |  (end_a,end_b) = (2,2)                    
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: r:3                              
+                                           |  (end_a,end_b) = (2,2)                    
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: r:5                              
+                                           |  (end_a,end_b) = (2,2)                    
+                                           |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: ihp130_Resistor_String          |Circuit 2: ihp130_resistor_string          
+-------------------------------------------|-------------------------------------------
+VREFout                                    |VREFout                                    
+VREFin                                     |VREFin                                     
+(no matching pin)                          |Node[3]                                    
+(no matching pin)                          |Node[2]                                    
+(no matching pin)                          |Node[1]                                    
+(no matching pin)                          |Node[0]                                    
+---------------------------------------------------------------------------------------
+Cell pin lists for ihp130_Resistor_String and ihp130_resistor_string altered to match.
+Device classes ihp130_Resistor_String and ihp130_resistor_string are equivalent.
+
+Final result: Top level cell failed pin matching.

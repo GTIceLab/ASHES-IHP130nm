@@ -1,0 +1,52 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+F {}
+E {}
+L 4 -10 -60 -10 50 {}
+L 4 30 -60 30 50 {}
+L 4 10 -60 10 50 {}
+L 4 -90 10 110 10 {}
+L 4 -90 30 110 30 {}
+L 4 -30 -60 -30 50 {}
+L 4 -50 -60 -50 50 {}
+L 4 -70 -60 -70 50 {}
+L 4 -90 50 110 50 {}
+L 4 110 -60 110 50 {}
+L 4 -90 -60 110 -60 {}
+L 4 -90 -60 -90 50 {}
+B 5 107.5 27.5 112.5 32.5 {name=Vd_P[0:3] dir=inout}
+B 5 107.5 7.5 112.5 12.5 {name=Vd_R[0:3] dir=inout}
+B 5 27.5 -62.5 32.5 -57.5 {name=Vg dir=inout}
+B 5 7.5 -62.5 12.5 -57.5 {name=Vs dir=inout}
+B 5 -12.5 -62.5 -7.5 -57.5 {name=VTUN dir=inout}
+B 5 -32.5 -62.5 -27.5 -57.5 {name=Vsel
+ dir=inout}
+B 5 -52.5 -62.5 -47.5 -57.5 {name=VINJ dir=inout}
+B 5 -72.5 -62.5 -67.5 -57.5 {name=GND dir=inout}
+B 5 -92.5 7.5 -87.5 12.5 {name=Vd_Run[0:3] dir=inout}
+B 5 -92.5 27.5 -87.5 32.5 {name=Vd_Prog[0:3] dir=inout}
+B 5 27.5 47.5 32.5 52.5 {name=Vg dir=inout}
+B 5 7.5 47.5 12.5 52.5 {name=Vs dir=inout}
+B 5 -12.5 47.5 -7.5 52.5 {name=VTUN dir=inout}
+B 5 -32.5 47.5 -27.5 52.5 {name=ColSel dir=inout}
+B 5 -52.5 47.5 -47.5 52.5 {name=VINJ dir=inout}
+B 5 -72.5 47.5 -67.5 52.5 {name=GND dir=inout}
+A 18 30 10 10 90 360 {}
+T {@symname} 38 34 0 0 0.3 0.3 {}
+T {@name} 75 -72 0 0 0.2 0.2 {}
+T {Vd_P[0:3]} 105 16 0 1 0.2 0.2 {}
+T {Vd_R[0:3]} 105 -4 0 1 0.2 0.2 {}
+T {Vg} 16 -25 3 0 0.2 0.2 {}
+T {Vs} -5 -24 3 0 0.2 0.2 {}
+T {VTUN} -25 -14 3 0 0.2 0.2 {}
+T {Vsel
+} -44 -15 3 0 0.2 0.2 {}
+T {VINJ} -64 -15 3 0 0.2 0.2 {}
+T {GND} -84 -15 3 0 0.2 0.2 {}
+T {4x1} 40 -10 0 0 0.1 0.1 { layer=18}

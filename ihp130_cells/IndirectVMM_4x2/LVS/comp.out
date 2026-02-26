@@ -1,0 +1,1183 @@
+
+Cell sg13_hv_pmos (1) disconnected node: drain
+Cell sg13_hv_pmos (1) disconnected node: gate
+Cell sg13_hv_pmos (1) disconnected node: source
+Cell sg13_hv_pmos (1) disconnected node: bulk
+Warning: Equate pins:  cell sg13_hv_pmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_hv_pmos                    |Circuit 2: sg13_hv_pmos                    
+-------------------------------------------|-------------------------------------------
+(no matching pin)                          |drain                                      
+(no matching pin)                          |gate                                       
+(no matching pin)                          |source                                     
+(no matching pin)                          |bulk                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_hv_pmos and sg13_hv_pmos are equivalent.
+Flattening unmatched subcell FG_Indirect in circuit IndirectVMM_4x1 (1)(1 instance)
+
+Cell IndirectVMM_4x1 (0) disconnected node: GND
+Cell IndirectVMM_4x1 (1) disconnected node: Vd_P[1]
+Cell IndirectVMM_4x1 (1) disconnected node: Vd_P[2]
+Cell IndirectVMM_4x1 (1) disconnected node: Vd_P[3]
+Cell IndirectVMM_4x1 (1) disconnected node: Vd_R[1]
+Cell IndirectVMM_4x1 (1) disconnected node: Vd_R[2]
+Cell IndirectVMM_4x1 (1) disconnected node: Vd_R[3]
+Cell IndirectVMM_4x1 (1) disconnected node: GND
+Cell IndirectVMM_4x1 (1) disconnected node: Vd_Run[0]
+Cell IndirectVMM_4x1 (1) disconnected node: Vd_Run[1]
+Cell IndirectVMM_4x1 (1) disconnected node: Vd_Run[2]
+Cell IndirectVMM_4x1 (1) disconnected node: Vd_Run[3]
+Cell IndirectVMM_4x1 (1) disconnected node: Vd_Prog[0]
+Cell IndirectVMM_4x1 (1) disconnected node: Vd_Prog[1]
+Cell IndirectVMM_4x1 (1) disconnected node: Vd_Prog[2]
+Cell IndirectVMM_4x1 (1) disconnected node: Vd_Prog[3]
+Cell IndirectVMM_4x1 (1) disconnected node: ColSel
+Subcircuit summary:
+Circuit 1: IndirectVMM_4x1                 |Circuit 2: IndirectVMM_4x1                 
+-------------------------------------------|-------------------------------------------
+sg13_hv_pmos (12)                          |sg13_hv_pmos (3) **Mismatch**              
+SVaricap (8)                               |(no matching element)                      
+(no matching element)                      |cap_cmim (2)                               
+Number of devices: 20 **Mismatch**         |Number of devices: 5 **Mismatch**          
+Number of nets: 69 **Mismatch**            |Number of nets: 21 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: IndirectVMM_4x1                 |Circuit 2: IndirectVMM_4x1                 
+
+---------------------------------------------------------------------------------------
+Net: Vmid[2]                               |Net: FG_Indirect:1/net1                    
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/(drain|source) = 2          
+                                           |                                           
+Net: VINJ                                  |Net: VINJ                                  
+  sg13_hv_pmos/4 = 12                      |  sg13_hv_pmos/(drain|source) = 1          
+  sg13_hv_pmos/(1|3) = 4                   |  sg13_hv_pmos/bulk = 3                    
+                                           |                                           
+Net: Vmid[0]                               |Net: FG_Indirect:1/Vfg                     
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/gate = 2                    
+                                           |  cap_cmim/2 = 2                           
+                                           |                                           
+Net: Vs                                    |Net: Vs                                    
+  sg13_hv_pmos/(1|3) = 4                   |  sg13_hv_pmos/(drain|source) = 1          
+                                           |                                           
+Net: Vd_R[0]                               |Net: Vd_R[0]                               
+  sg13_hv_pmos/(1|3) = 1                   |  sg13_hv_pmos/(drain|source) = 1          
+                                           |                                           
+Net: Vd_P[0]                               |Net: Vd_P[0]                               
+  sg13_hv_pmos/(1|3) = 1                   |  sg13_hv_pmos/(drain|source) = 1          
+                                           |                                           
+Net: Vg                                    |Net: Vg                                    
+  SVaricap/2 = 4                           |  cap_cmim/1 = 1                           
+                                           |                                           
+Net: VTUN                                  |Net: VTUN                                  
+  SVaricap/2 = 4                           |  cap_cmim/1 = 1                           
+                                           |                                           
+Net: Vsel                                  |Net: Vsel                                  
+  sg13_hv_pmos/2 = 4                       |  sg13_hv_pmos/gate = 1                    
+                                           |                                           
+Net: FG[1]                                 |Net: FG_Indirect:1/dummy_10                
+  SVaricap/1 = 2                           |  sg13_hv_pmos/proxy1 = 1                  
+  sg13_hv_pmos/2 = 2                       |                                           
+                                           |                                           
+Net: FG[0]                                 |Net: FG_Indirect:1/dummy_14                
+  sg13_hv_pmos/2 = 2                       |  sg13_hv_pmos/proxy1 = 1                  
+  SVaricap/1 = 2                           |                                           
+                                           |                                           
+Net: Vmid[1]                               |Net: FG_Indirect:1/dummy_18                
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/proxy1 = 1                  
+                                           |                                           
+Net: Vd_P[2]                               |Net: FG_Indirect:1/dummy_11                
+  sg13_hv_pmos/(1|3) = 1                   |  sg13_hv_pmos/proxy2 = 1                  
+                                           |                                           
+Net: Vd_P[3]                               |Net: FG_Indirect:1/dummy_15                
+  sg13_hv_pmos/(1|3) = 1                   |  sg13_hv_pmos/proxy2 = 1                  
+                                           |                                           
+Net: FG[3]                                 |Net: FG_Indirect:1/dummy_19                
+  sg13_hv_pmos/2 = 2                       |  sg13_hv_pmos/proxy2 = 1                  
+  SVaricap/1 = 2                           |                                           
+                                           |                                           
+Net: Vd_P[1]                               |Net: FG_Indirect:1/dummy_12                
+  sg13_hv_pmos/(1|3) = 1                   |  sg13_hv_pmos/proxy3 = 1                  
+                                           |                                           
+Net: Vd_R[2]                               |Net: FG_Indirect:1/dummy_16                
+  sg13_hv_pmos/(1|3) = 1                   |  sg13_hv_pmos/proxy3 = 1                  
+                                           |                                           
+Net: Vd_R[1]                               |Net: FG_Indirect:1/dummy_20                
+  sg13_hv_pmos/(1|3) = 1                   |  sg13_hv_pmos/proxy3 = 1                  
+                                           |                                           
+Net: FG[2]                                 |Net: FG_Indirect:1/dummy_13                
+  sg13_hv_pmos/2 = 2                       |  sg13_hv_pmos/proxy4 = 1                  
+  SVaricap/1 = 2                           |                                           
+                                           |                                           
+Net: Vd_R[3]                               |Net: FG_Indirect:1/dummy_17                
+  sg13_hv_pmos/(1|3) = 1                   |  sg13_hv_pmos/proxy4 = 1                  
+                                           |                                           
+Net: dummy_22                              |Net: FG_Indirect:1/dummy_21                
+  sg13_hv_pmos/proxydrain = 1              |  sg13_hv_pmos/proxy4 = 1                  
+                                           |                                           
+Net: dummy_26                              |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: dummy_30                              |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: dummy_34                              |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: dummy_38                              |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: dummy_42                              |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: dummy_46                              |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: dummy_50                              |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: dummy_54                              |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: dummy_58                              |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: dummy_62                              |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: dummy_66                              |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: dummy_23                              |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: dummy_27                              |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: dummy_31                              |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: dummy_35                              |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: dummy_39                              |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: dummy_43                              |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: dummy_47                              |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: dummy_51                              |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: dummy_55                              |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: dummy_59                              |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: dummy_63                              |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: dummy_67                              |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: dummy_24                              |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: dummy_28                              |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: dummy_32                              |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: dummy_36                              |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: dummy_40                              |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: dummy_44                              |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: dummy_48                              |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: dummy_52                              |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: dummy_56                              |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: dummy_60                              |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: dummy_64                              |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: dummy_68                              |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: dummy_25                              |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: dummy_29                              |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: dummy_33                              |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: dummy_37                              |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: dummy_41                              |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: dummy_45                              |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: dummy_49                              |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: dummy_53                              |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: dummy_57                              |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: dummy_61                              |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: dummy_65                              |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: dummy_69                              |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: Vmid[3]                               |(no matching net)                          
+  sg13_hv_pmos/(1|3) = 2                   |                                           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: IndirectVMM_4x1                 |Circuit 2: IndirectVMM_4x1                 
+
+---------------------------------------------------------------------------------------
+Instance: sg13_hv_pmos:0                   |Instance: FG_Indirect:1/sg13_hv_pmos:4     
+  (1,3) = (2,1)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 16                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (4,2)                   
+  proxysource = 1                          |  gate = 1                                 
+  proxybulk = 1                            |  bulk = 4                                 
+                                           |                                           
+Instance: sg13_hv_pmos:2                   |Instance: FG_Indirect:1/sg13_hv_pmos:5     
+  (1,3) = (2,1)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 16                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (2,1)                   
+  proxysource = 1                          |  gate = 4                                 
+  proxybulk = 1                            |  bulk = 4                                 
+                                           |                                           
+Instance: sg13_hv_pmos:3                   |Instance: FG_Indirect:1/sg13_hv_pmos:1     
+  (1,3) = (2,1)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 16                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (1,1)                   
+  proxysource = 1                          |  gate = 4                                 
+  proxybulk = 1                            |  bulk = 4                                 
+                                           |                                           
+Instance: sg13_hv_pmos:6                   |Instance: FG_Indirect:1/cap_cmim:C3        
+  (1,3) = (16,2)                           |  1 = 1                                    
+  2 = 4                                    |  2 = 4                                    
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: sg13_hv_pmos:8                   |Instance: FG_Indirect:1/cap_cmim:C1        
+  (1,3) = (16,2)                           |  1 = 1                                    
+  2 = 4                                    |  2 = 4                                    
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: sg13_hv_pmos:11                  |(no matching instance)                     
+  (1,3) = (2,1)                            |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: sg13_hv_pmos:12                  |(no matching instance)                     
+  (1,3) = (16,2)                           |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: sg13_hv_pmos:13                  |(no matching instance)                     
+  (1,3) = (4,1)                            |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: sg13_hv_pmos:14                  |(no matching instance)                     
+  (1,3) = (4,1)                            |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: sg13_hv_pmos:16                  |(no matching instance)                     
+  (1,3) = (4,1)                            |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: sg13_hv_pmos:17                  |(no matching instance)                     
+  (1,3) = (16,2)                           |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: sg13_hv_pmos:18                  |(no matching instance)                     
+  (1,3) = (4,1)                            |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: SVaricap:1                       |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 4                                    |                                           
+                                           |                                           
+Instance: SVaricap:4                       |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 4                                    |                                           
+                                           |                                           
+Instance: SVaricap:5                       |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 4                                    |                                           
+                                           |                                           
+Instance: SVaricap:7                       |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 4                                    |                                           
+                                           |                                           
+Instance: SVaricap:9                       |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 4                                    |                                           
+                                           |                                           
+Instance: SVaricap:10                      |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 4                                    |                                           
+                                           |                                           
+Instance: SVaricap:15                      |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 4                                    |                                           
+                                           |                                           
+Instance: SVaricap:19                      |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 4                                    |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits IndirectVMM_4x1 IndirectVMM_4x1
+
+Cell IndirectVMM_4x2 (0) disconnected node: GND
+Cell IndirectVMM_4x2 (1) disconnected node: Vd_R[1]
+Cell IndirectVMM_4x2 (1) disconnected node: Vd_R[2]
+Cell IndirectVMM_4x2 (1) disconnected node: Vd_R[3]
+Cell IndirectVMM_4x2 (1) disconnected node: Vd_P[1]
+Cell IndirectVMM_4x2 (1) disconnected node: Vd_P[2]
+Cell IndirectVMM_4x2 (1) disconnected node: Vd_P[3]
+Cell IndirectVMM_4x2 (1) disconnected node: GND
+Subcircuit summary:
+Circuit 1: IndirectVMM_4x2                 |Circuit 2: IndirectVMM_4x2                 
+-------------------------------------------|-------------------------------------------
+sg13_hv_pmos (24)                          |sg13_hv_pmos (6) **Mismatch**              
+SVaricap (16)                              |(no matching element)                      
+(no matching element)                      |cap_cmim (4)                               
+Number of devices: 40 **Mismatch**         |Number of devices: 10 **Mismatch**         
+Number of nets: 129 **Mismatch**           |Number of nets: 41 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: IndirectVMM_4x2                 |Circuit 2: IndirectVMM_4x2                 
+
+---------------------------------------------------------------------------------------
+Net: VTUN                                  |Net: VTUN                                  
+  SVaricap/2 = 8                           |  cap_cmim/1 = 2                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/Vmid[1]            |Net: IndirectVMM_4x1:3/FG_Indirect:1/net1  
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/(drain|source) = 2          
+                                           |                                           
+Net: Vd_R[1]                               |Net: IndirectVMM_4x1:1/FG_Indirect:1/net1  
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/(drain|source) = 2          
+                                           |                                           
+Net: VINJ[0]                               |Net: VINJ[0]                               
+  sg13_hv_pmos/4 = 12                      |  sg13_hv_pmos/(drain|source) = 1          
+  sg13_hv_pmos/(1|3) = 4                   |  sg13_hv_pmos/bulk = 3                    
+                                           |                                           
+Net: VINJ[1]                               |Net: VINJ[1]                               
+  sg13_hv_pmos/4 = 12                      |  sg13_hv_pmos/(drain|source) = 1          
+  sg13_hv_pmos/(1|3) = 4                   |  sg13_hv_pmos/bulk = 3                    
+                                           |                                           
+Net: Vd_R[2]                               |Net: IndirectVMM_4x1:3/FG_Indirect:1/Vfg   
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/gate = 2                    
+                                           |  cap_cmim/2 = 2                           
+                                           |                                           
+Net: Vd_R[3]                               |Net: IndirectVMM_4x1:1/FG_Indirect:1/Vfg   
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/gate = 2                    
+                                           |  cap_cmim/2 = 2                           
+                                           |                                           
+Net: Vd_P[3]                               |Net: net1_3                                
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/(drain|source) = 1          
+                                           |                                           
+Net: /IndirectVMM_4x1_0/Vmid[2]            |Net: net2_3                                
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/(drain|source) = 1          
+                                           |                                           
+Net: Vs[0]                                 |Net: Vs[0]                                 
+  sg13_hv_pmos/(1|3) = 4                   |  sg13_hv_pmos/(drain|source) = 1          
+                                           |                                           
+Net: Vd_P[0]                               |Net: Vd_P[0]                               
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/(drain|source) = 1          
+                                           |                                           
+Net: Vd_R[0]                               |Net: Vd_R[0]                               
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/(drain|source) = 1          
+                                           |                                           
+Net: Vs[1]                                 |Net: Vs[1]                                 
+  sg13_hv_pmos/(1|3) = 4                   |  sg13_hv_pmos/(drain|source) = 1          
+                                           |                                           
+Net: Vg[0]                                 |Net: Vg[0]                                 
+  SVaricap/2 = 4                           |  cap_cmim/1 = 1                           
+                                           |                                           
+Net: Vg[1]                                 |Net: Vg[1]                                 
+  SVaricap/2 = 4                           |  cap_cmim/1 = 1                           
+                                           |                                           
+Net: Vsel[0]                               |Net: VSel[0]                               
+  sg13_hv_pmos/2 = 4                       |  sg13_hv_pmos/gate = 1                    
+                                           |                                           
+Net: Vsel[1]                               |Net: VSel[1]                               
+  sg13_hv_pmos/2 = 4                       |  sg13_hv_pmos/gate = 1                    
+                                           |                                           
+Net: /IndirectVMM_4x1_1/Vmid[2]            |Net: IndirectVMM_4x1:3/FG_Indirect:1/dummy 
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/proxy1 = 1                  
+                                           |                                           
+Net: /IndirectVMM_4x1_1/Vmid[3]            |Net: IndirectVMM_4x1:3/FG_Indirect:1/dummy 
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/proxy1 = 1                  
+                                           |                                           
+Net: /IndirectVMM_4x1_1/Vmid[0]            |Net: IndirectVMM_4x1:3/FG_Indirect:1/dummy 
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/proxy1 = 1                  
+                                           |                                           
+Net: /IndirectVMM_4x1_1/Vmid[1]            |Net: IndirectVMM_4x1:1/FG_Indirect:1/dummy 
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/proxy1 = 1                  
+                                           |                                           
+Net: /IndirectVMM_4x1_0/Vmid[3]            |Net: IndirectVMM_4x1:1/FG_Indirect:1/dummy 
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/proxy1 = 1                  
+                                           |                                           
+Net: /IndirectVMM_4x1_0/FG[2]              |Net: IndirectVMM_4x1:1/FG_Indirect:1/dummy 
+  sg13_hv_pmos/2 = 2                       |  sg13_hv_pmos/proxy1 = 1                  
+  SVaricap/1 = 2                           |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/FG[3]              |Net: IndirectVMM_4x1:3/FG_Indirect:1/dummy 
+  sg13_hv_pmos/2 = 2                       |  sg13_hv_pmos/proxy2 = 1                  
+  SVaricap/1 = 2                           |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/FG[0]              |Net: IndirectVMM_4x1:3/FG_Indirect:1/dummy 
+  sg13_hv_pmos/2 = 2                       |  sg13_hv_pmos/proxy2 = 1                  
+  SVaricap/1 = 2                           |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/FG[1]              |Net: IndirectVMM_4x1:3/FG_Indirect:1/dummy 
+  SVaricap/1 = 2                           |  sg13_hv_pmos/proxy2 = 1                  
+  sg13_hv_pmos/2 = 2                       |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/FG[2]              |Net: IndirectVMM_4x1:1/FG_Indirect:1/dummy 
+  sg13_hv_pmos/2 = 2                       |  sg13_hv_pmos/proxy2 = 1                  
+  SVaricap/1 = 2                           |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/FG[3]              |Net: IndirectVMM_4x1:1/FG_Indirect:1/dummy 
+  sg13_hv_pmos/2 = 2                       |  sg13_hv_pmos/proxy2 = 1                  
+  SVaricap/1 = 2                           |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/FG[0]              |Net: IndirectVMM_4x1:1/FG_Indirect:1/dummy 
+  sg13_hv_pmos/2 = 2                       |  sg13_hv_pmos/proxy2 = 1                  
+  SVaricap/1 = 2                           |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/FG[1]              |Net: IndirectVMM_4x1:3/FG_Indirect:1/dummy 
+  SVaricap/1 = 2                           |  sg13_hv_pmos/proxy3 = 1                  
+  sg13_hv_pmos/2 = 2                       |                                           
+                                           |                                           
+Net: Vd_P[1]                               |Net: IndirectVMM_4x1:3/FG_Indirect:1/dummy 
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/proxy3 = 1                  
+                                           |                                           
+Net: Vd_P[2]                               |Net: IndirectVMM_4x1:3/FG_Indirect:1/dummy 
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/proxy3 = 1                  
+                                           |                                           
+Net: /IndirectVMM_4x1_0/Vmid[0]            |Net: IndirectVMM_4x1:1/FG_Indirect:1/dummy 
+  sg13_hv_pmos/(1|3) = 2                   |  sg13_hv_pmos/proxy3 = 1                  
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_22           |Net: IndirectVMM_4x1:1/FG_Indirect:1/dummy 
+  sg13_hv_pmos/proxydrain = 1              |  sg13_hv_pmos/proxy3 = 1                  
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_26           |Net: IndirectVMM_4x1:1/FG_Indirect:1/dummy 
+  sg13_hv_pmos/proxydrain = 1              |  sg13_hv_pmos/proxy3 = 1                  
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_30           |Net: IndirectVMM_4x1:3/FG_Indirect:1/dummy 
+  sg13_hv_pmos/proxydrain = 1              |  sg13_hv_pmos/proxy4 = 1                  
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_34           |Net: IndirectVMM_4x1:3/FG_Indirect:1/dummy 
+  sg13_hv_pmos/proxydrain = 1              |  sg13_hv_pmos/proxy4 = 1                  
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_38           |Net: IndirectVMM_4x1:3/FG_Indirect:1/dummy 
+  sg13_hv_pmos/proxydrain = 1              |  sg13_hv_pmos/proxy4 = 1                  
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_42           |Net: IndirectVMM_4x1:1/FG_Indirect:1/dummy 
+  sg13_hv_pmos/proxydrain = 1              |  sg13_hv_pmos/proxy4 = 1                  
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_46           |Net: IndirectVMM_4x1:1/FG_Indirect:1/dummy 
+  sg13_hv_pmos/proxydrain = 1              |  sg13_hv_pmos/proxy4 = 1                  
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_50           |Net: IndirectVMM_4x1:1/FG_Indirect:1/dummy 
+  sg13_hv_pmos/proxydrain = 1              |  sg13_hv_pmos/proxy4 = 1                  
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_54           |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_58           |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_62           |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_66           |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_22           |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_26           |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_30           |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_34           |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_38           |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_42           |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_46           |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_50           |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_54           |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_58           |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_62           |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_66           |(no matching net)                          
+  sg13_hv_pmos/proxydrain = 1              |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_23           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_27           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_31           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_35           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_39           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_43           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_47           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_51           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_55           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_59           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_63           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_67           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_23           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_27           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_31           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_35           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_39           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_43           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_47           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_51           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_55           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_59           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_63           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_67           |(no matching net)                          
+  sg13_hv_pmos/proxygate = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_24           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_28           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_32           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_36           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_40           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_44           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_48           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_52           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_56           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_60           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_64           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_68           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_24           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_28           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_32           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_36           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_40           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_44           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_48           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_52           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_56           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_60           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_64           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_68           |(no matching net)                          
+  sg13_hv_pmos/proxysource = 1             |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_25           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_29           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_33           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_37           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_41           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_45           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_49           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_53           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_57           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_61           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_65           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_0/dummy_69           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_25           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_29           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_33           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_37           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_41           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_45           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_49           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_53           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_57           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_61           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_65           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+                                           |                                           
+Net: /IndirectVMM_4x1_1/dummy_69           |(no matching net)                          
+  sg13_hv_pmos/proxybulk = 1               |                                           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: IndirectVMM_4x2                 |Circuit 2: IndirectVMM_4x2                 
+
+---------------------------------------------------------------------------------------
+Instance: IndirectVMM_4x1_0/sg13_hv_pmos:0 |Instance: IndirectVMM_4x1:3/FG_Indirect:1/ 
+  (1,3) = (2,2)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 16                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (4,2)                   
+  proxysource = 1                          |  gate = 1                                 
+  proxybulk = 1                            |  bulk = 4                                 
+                                           |                                           
+Instance: IndirectVMM_4x1_0/sg13_hv_pmos:2 |Instance: IndirectVMM_4x1:3/FG_Indirect:1/ 
+  (1,3) = (2,2)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 16                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (2,1)                   
+  proxysource = 1                          |  gate = 4                                 
+  proxybulk = 1                            |  bulk = 4                                 
+                                           |                                           
+Instance: IndirectVMM_4x1_0/sg13_hv_pmos:3 |Instance: IndirectVMM_4x1:3/FG_Indirect:1/ 
+  (1,3) = (2,2)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 16                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (1,1)                   
+  proxysource = 1                          |  gate = 4                                 
+  proxybulk = 1                            |  bulk = 4                                 
+                                           |                                           
+Instance: IndirectVMM_4x1_0/sg13_hv_pmos:6 |Instance: IndirectVMM_4x1:1/FG_Indirect:1/ 
+  (1,3) = (16,2)                           |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 16                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (4,2)                   
+  proxysource = 1                          |  gate = 1                                 
+  proxybulk = 1                            |  bulk = 4                                 
+                                           |                                           
+Instance: IndirectVMM_4x1_0/sg13_hv_pmos:8 |Instance: IndirectVMM_4x1:1/FG_Indirect:1/ 
+  (1,3) = (16,2)                           |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 16                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (2,1)                   
+  proxysource = 1                          |  gate = 4                                 
+  proxybulk = 1                            |  bulk = 4                                 
+                                           |                                           
+Instance: IndirectVMM_4x1_0/sg13_hv_pmos:1 |Instance: IndirectVMM_4x1:1/FG_Indirect:1/ 
+  (1,3) = (2,2)                            |  proxy1 = 1                               
+  2 = 4                                    |  proxy2 = 1                               
+  4 = 16                                   |  proxy3 = 1                               
+  proxydrain = 1                           |  proxy4 = 1                               
+  proxygate = 1                            |  (drain,source) = (1,1)                   
+  proxysource = 1                          |  gate = 4                                 
+  proxybulk = 1                            |  bulk = 4                                 
+                                           |                                           
+Instance: IndirectVMM_4x1_0/sg13_hv_pmos:1 |Instance: IndirectVMM_4x1:3/FG_Indirect:1/ 
+  (1,3) = (16,2)                           |  1 = 2                                    
+  2 = 4                                    |  2 = 4                                    
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_0/sg13_hv_pmos:1 |Instance: IndirectVMM_4x1:3/FG_Indirect:1/ 
+  (1,3) = (4,2)                            |  1 = 1                                    
+  2 = 4                                    |  2 = 4                                    
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_0/sg13_hv_pmos:1 |Instance: IndirectVMM_4x1:1/FG_Indirect:1/ 
+  (1,3) = (4,2)                            |  1 = 2                                    
+  2 = 4                                    |  2 = 4                                    
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_0/sg13_hv_pmos:1 |Instance: IndirectVMM_4x1:1/FG_Indirect:1/ 
+  (1,3) = (4,2)                            |  1 = 1                                    
+  2 = 4                                    |  2 = 4                                    
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_0/sg13_hv_pmos:1 |(no matching instance)                     
+  (1,3) = (16,2)                           |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_0/sg13_hv_pmos:1 |(no matching instance)                     
+  (1,3) = (4,2)                            |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/sg13_hv_pmos:0 |(no matching instance)                     
+  (1,3) = (2,2)                            |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/sg13_hv_pmos:2 |(no matching instance)                     
+  (1,3) = (2,2)                            |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/sg13_hv_pmos:3 |(no matching instance)                     
+  (1,3) = (2,2)                            |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/sg13_hv_pmos:6 |(no matching instance)                     
+  (1,3) = (16,2)                           |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/sg13_hv_pmos:8 |(no matching instance)                     
+  (1,3) = (16,2)                           |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/sg13_hv_pmos:1 |(no matching instance)                     
+  (1,3) = (2,2)                            |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/sg13_hv_pmos:1 |(no matching instance)                     
+  (1,3) = (16,2)                           |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/sg13_hv_pmos:1 |(no matching instance)                     
+  (1,3) = (4,2)                            |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/sg13_hv_pmos:1 |(no matching instance)                     
+  (1,3) = (4,2)                            |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/sg13_hv_pmos:1 |(no matching instance)                     
+  (1,3) = (4,2)                            |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/sg13_hv_pmos:1 |(no matching instance)                     
+  (1,3) = (16,2)                           |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/sg13_hv_pmos:1 |(no matching instance)                     
+  (1,3) = (4,2)                            |                                           
+  2 = 4                                    |                                           
+  4 = 16                                   |                                           
+  proxydrain = 1                           |                                           
+  proxygate = 1                            |                                           
+  proxysource = 1                          |                                           
+  proxybulk = 1                            |                                           
+                                           |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_0/SVaricap:1     |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 4                                    |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_0/SVaricap:4     |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 4                                    |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_0/SVaricap:5     |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 8                                    |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_0/SVaricap:7     |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 8                                    |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_0/SVaricap:9     |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 8                                    |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_0/SVaricap:10    |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 4                                    |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_0/SVaricap:15    |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 8                                    |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_0/SVaricap:19    |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 4                                    |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/SVaricap:1     |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 4                                    |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/SVaricap:4     |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 4                                    |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/SVaricap:5     |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 8                                    |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/SVaricap:7     |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 8                                    |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/SVaricap:9     |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 8                                    |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/SVaricap:10    |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 4                                    |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/SVaricap:15    |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 8                                    |                                           
+                                           |                                           
+Instance: IndirectVMM_4x1_1/SVaricap:19    |(no matching instance)                     
+  1 = 4                                    |                                           
+  2 = 4                                    |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: IndirectVMM_4x2                 |Circuit 2: IndirectVMM_4x2                 
+-------------------------------------------|-------------------------------------------
+Vd_P[0]                                    |VTUN **Mismatch**                          
+Vd_R[0]                                    |(no pin, node is IndirectVMM_4x1:3/FG_Indi 
+Vd_R[1]                                    |(no pin, node is IndirectVMM_4x1:1/FG_Indi 
+Vd_P[1]                                    |VINJ[0] **Mismatch**                       
+Vd_P[2]                                    |VINJ[1] **Mismatch**                       
+Vd_R[2]                                    |(no pin, node is IndirectVMM_4x1:3/FG_Indi 
+Vd_R[3]                                    |(no pin, node is IndirectVMM_4x1:1/FG_Indi 
+Vd_P[3]                                    |(no pin, node is net1_3)                   
+Vs[0]                                      |VSel[1] **Mismatch**                       
+Vs[1]                                      |(no pin, node is IndirectVMM_4x1:3/FG_Indi 
+Vg[0]                                      |(no pin, node is IndirectVMM_4x1:3/FG_Indi 
+Vg[1]                                      |(no pin, node is IndirectVMM_4x1:3/FG_Indi 
+Vsel[0]                                    |(no pin, node is IndirectVMM_4x1:1/FG_Indi 
+Vsel[1]                                    |(no pin, node is IndirectVMM_4x1:1/FG_Indi 
+VINJ[0]                                    |(no pin, node is IndirectVMM_4x1:3/FG_Indi 
+VINJ[1]                                    |(no pin, node is IndirectVMM_4x1:3/FG_Indi 
+VTUN                                       |(no pin, node is IndirectVMM_4x1:1/FG_Indi 
+GND                                        |GND                                        
+(no pin, node is /IndirectVMM_4x1_1/dummy_ |Vd_R[0]                                    
+(no matching pin)                          |Vd_R[1]                                    
+(no matching pin)                          |Vd_R[2]                                    
+(no matching pin)                          |Vd_R[3]                                    
+(no pin, node is /IndirectVMM_4x1_1/dummy_ |Vd_P[0]                                    
+(no matching pin)                          |Vd_P[1]                                    
+(no matching pin)                          |Vd_P[2]                                    
+(no matching pin)                          |Vd_P[3]                                    
+(no pin, node is /IndirectVMM_4x1_1/dummy_ |Vg[0]                                      
+(no pin, node is /IndirectVMM_4x1_1/dummy_ |Vg[1]                                      
+(no pin, node is /IndirectVMM_4x1_1/dummy_ |VSel[0]                                    
+(no pin, node is /IndirectVMM_4x1_1/dummy_ |Vs[0]                                      
+(no pin, node is /IndirectVMM_4x1_1/dummy_ |Vs[1]                                      
+---------------------------------------------------------------------------------------
+Cell pin lists for IndirectVMM_4x2 and IndirectVMM_4x2 altered to match.
+Device classes IndirectVMM_4x2 and IndirectVMM_4x2 are equivalent.
+
+Final result: Top level cell failed pin matching.

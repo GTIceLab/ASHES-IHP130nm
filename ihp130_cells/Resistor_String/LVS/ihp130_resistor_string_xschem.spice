@@ -1,0 +1,12 @@
+** sch_path: /home/cwhite324/ASHES-IHP130nm/ihp130_cells/Resistor_String/ihp130_resistor_string.sch
+.subckt ihp130_resistor_string VREFout VREFin Node[3] Node[2] Node[1] Node[0]
+*.PININFO VREFout:B VREFin:B Node[3:0]:O
+R0 VREFin Node[0] 1k m=1
+R1 Node[0] net1 1k m=1
+R2 net1 Node[1] 1k m=1
+R3 Node[1] net2 1k m=1
+R4 net2 Node[2] 1k m=1
+R5 Node[2] net3 1k m=1
+R6 net3 Node[3] 1k m=1
+R7 Node[3] VREFout 1k m=1
+.ends
