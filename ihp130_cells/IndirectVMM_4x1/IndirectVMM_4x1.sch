@@ -42,4 +42,4 @@ C {lab_wire.sym} 500 -470 0 1 {name=p9 sig_type=std_logic lab=Vd_R[0:3]}
 C {lab_wire.sym} 500 -450 0 1 {name=p10 sig_type=std_logic lab=Vd_P[0:3]}
 C {lab_wire.sym} 250 -410 0 0 {name=p11 sig_type=std_logic lab=Vsel
 }
-C {FG_Indirect/FG_Indirect.sym} 340 -500 0 0 {name=x1}
+C {FG_Indirect/FG_Indirect.sym} 340 -500 0 0 {name=x1[0:3]}

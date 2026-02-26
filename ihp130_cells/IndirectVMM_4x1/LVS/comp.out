@@ -1,16 +1,16 @@
 
-Circuit 1 cell SVaricap and Circuit 2 cell SVaricap are black boxes.
+Circuit 1 cell SVaricap and Circuit 2 cell Svaricap are black boxes.
 Warning: Equate pins:  cell SVaricap is a placeholder, treated as a black box.
-Warning: Equate pins:  cell SVaricap is a placeholder, treated as a black box.
+Warning: Equate pins:  cell Svaricap is a placeholder, treated as a black box.
 
 Subcircuit pins:
-Circuit 1: SVaricap                        |Circuit 2: SVaricap                        
+Circuit 1: SVaricap                        |Circuit 2: Svaricap                        
 -------------------------------------------|-------------------------------------------
 1                                          |1                                          
 2                                          |2                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes SVaricap and SVaricap are equivalent.
+Device classes SVaricap and Svaricap are equivalent.
 Flattening unmatched subcell FG_Indirect in circuit IndirectVMM_4x1 (1)(4 instances)
 
 Cell IndirectVMM_4x1 (0) disconnected node: GND
@@ -19,7 +19,7 @@ Subcircuit summary:
 Circuit 1: IndirectVMM_4x1                 |Circuit 2: IndirectVMM_4x1                 
 -------------------------------------------|-------------------------------------------
 sg13_hv_pmos (12)                          |sg13_hv_pmos (12)                          
-SVaricap (8)                               |SVaricap (8)                               
+SVaricap (8)                               |Svaricap (8)                               
 Number of devices: 20                      |Number of devices: 20                      
 Number of nets: 21                         |Number of nets: 21                         
 ---------------------------------------------------------------------------------------

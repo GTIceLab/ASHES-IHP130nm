@@ -135,7 +135,7 @@ rect 674 -430 700 -427
 rect 662 -450 677 -430
 rect 697 -450 712 -430
 rect 674 -453 700 -450
-use ihp130_VinjInv2  ihp130_VinjInv2_0
+use ihp130_VinjInv2  ihp130_VinjInv2_0 ~/ASHES-IHP130nm/ihp130_cells/VinjInv2
 timestamp 1771802919
 transform 1 0 196 0 1 -136
 box -406 136 161 308
@@ -164,3 +164,4 @@ timestamp 1771799129
 transform 1 0 1116 0 1 -616
 box -404 138 750 310
 << end >>
+ 

@@ -1,6 +1,6 @@
 magic
 tech ihp-sg13g2
-timestamp 1771887685
+timestamp 1772058336
 << metal3 >>
 rect 0 18754 40 18794
 rect 0 18334 40 18374
@@ -50,9 +50,13 @@ rect 0 1954 40 1994
 rect 0 1534 40 1574
 rect 0 1114 40 1154
 use IndirectVMM_4x2  IndirectVMM_4x2_0 ~/ASHES-IHP130nm/ihp130_cells/IndirectVMM_4x2
-timestamp 1771887685
+timestamp 1772056190
 transform 1 0 15049 0 1 4254
 box -16 3 2027 653
+use IndirectVMM_GSwcs_1x2  IndirectVMM_GSwcs_1x2_0 ~/ASHES-IHP130nm/ihp130_cells/IndirectVMM_GSwcs_1x2
+timestamp 1771995093
+transform 1 0 15474 0 1 4422
+box -446 485 1607 1135
 << labels >>
 flabel metal3 s 49960 12454 50000 12494 0 FreeSans 3200 0 0 0 analog_pin2
 port 2 nsew signal bidirectional
