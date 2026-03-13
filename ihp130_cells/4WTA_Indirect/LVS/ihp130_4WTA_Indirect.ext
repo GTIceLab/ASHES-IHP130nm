@@ -1,0 +1,475 @@
+timestamp 1773423910
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11
+use IndirectVMM_4x1 IndirectVMM_4x1_0 1 0 -1022 0 1 -312
+parameters sg13_hv_nmos l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sg13_hv_pmos l=l w=w a1=as p1=ps a2=ad p2=pd
+port "Vd_P[3]" 29 -2 166 44 258 m3
+port "Iin[3]" 33 -2 304 44 396 m3
+port "Iin[2]" 32 -2 442 44 534 m3
+port "Vd_P[2]" 28 -2 580 44 672 m3
+port "Vd_P[1]" 27 -2 718 44 810 m3
+port "Iin[1]" 31 -2 856 44 948 m3
+port "Iin[0]" 30 -2 994 44 1086 m3
+port "Vd_P[0]" 26 -2 1132 44 1224 m3
+port "VTUN" 21 1810 1248 1890 1298 m2
+port "Vg" 22 1122 1248 1202 1298 m2
+port "VINJ" 23 378 1248 458 1298 m2
+port "Vs" 24 256 1248 336 1298 m2
+port "Vsel" 25 130 1248 210 1298 m2
+port "Vbias" 2 9544 1248 9624 1298 m2
+port "Vmid" 20 9562 320 9624 412 m3
+port "RUN" 9 4210 1248 4290 1298 m2
+port "PROG" 8 4088 1248 4168 1298 m2
+port "Vout[3]" 16 9562 938 9624 1030 m3
+port "Vout[2]" 17 9562 804 9624 896 m3
+port "Vout[1]" 18 9562 664 9624 756 m3
+port "Vout[0]" 19 9562 524 9624 616 m3
+port "VDD" 3 2856 1248 2936 1298 m2
+port "GND" 1 7268 1248 7348 1298 m2
+node "Vd_P[3]" 0 37.5768 -2 166 m3 0 0 0 0 0 0 0 0 4232 276 0 0 0 0 0 0 0 0
+node "Iin[3]" 0 30.6188 -2 304 m3 0 0 0 0 0 0 0 0 4232 276 0 0 0 0 0 0 0 0
+node "Iin[2]" 0 30.6188 -2 442 m3 0 0 0 0 0 0 0 0 4232 276 0 0 0 0 0 0 0 0
+node "Vd_P[2]" 0 30.6188 -2 580 m3 0 0 0 0 0 0 0 0 4232 276 0 0 0 0 0 0 0 0
+node "Vd_P[1]" 0 30.6188 -2 718 m3 0 0 0 0 0 0 0 0 4232 276 0 0 0 0 0 0 0 0
+node "Iin[1]" 0 30.6188 -2 856 m3 0 0 0 0 0 0 0 0 4232 276 0 0 0 0 0 0 0 0
+node "Iin[0]" 0 30.6188 -2 994 m3 0 0 0 0 0 0 0 0 4232 276 0 0 0 0 0 0 0 0
+node "Vd_P[0]" 0 37.5768 -2 1132 m3 0 0 0 0 0 0 0 0 4232 276 0 0 0 0 0 0 0 0
+node "VTUN" 0 87.4443 1810 1248 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "Vg" 0 95.2108 1122 1248 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "VINJ" 0 38.7745 378 1248 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "Vs" 0 30.5405 256 1248 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "Vsel" 0 38.818 130 1248 m2 0 0 0 0 0 0 4000 260 0 0 0 0 0 0 0 0 0 0
+node "Vbias" 4 894.46 9544 1248 m2 0 0 0 0 10304 408 73504 3236 41952 1096 0 0 0 0 0 0 0 0
+node "Vmid" 20 6749.27 9562 320 m3 0 0 0 0 332776 9928 306640 9076 416664 11128 0 0 0 0 0 0 0 0
+node "a_3788_174#" 13 4897.74 3788 174 hvpdif 0 0 0 0 195828 6432 230652 6192 231000 6740 0 0 0 0 0 0 0 0
+node "a_3546_174#" 13 2863.6 3546 174 hvpdif 0 0 0 0 97100 3156 197444 5816 263900 9164 0 0 0 0 0 0 0 0
+node "a_3304_174#" 11 2567.8 3304 174 hvpdif 0 0 0 0 98900 3192 188064 4332 224660 8180 0 0 0 0 0 0 0 0
+node "a_3062_174#" 12 1884.08 3062 174 hvpdif 0 0 0 0 96900 3172 122364 4168 192840 7408 0 0 0 0 0 0 0 0
+node "a_3788_450#" 8 341.105 3788 450 hvpdif 0 0 0 0 45000 1124 73180 2148 117600 6040 0 0 0 0 0 0 0 0
+node "a_3546_450#" 8 165.538 3546 450 hvpdif 0 0 0 0 31200 1004 44240 1736 113440 5832 0 0 0 0 0 0 0 0
+node "a_3304_450#" 8 510.07 3304 450 hvpdif 0 0 0 0 28400 976 41440 1708 107760 5548 0 0 0 0 0 0 0 0
+node "a_3062_450#" 8 517.87 3062 450 hvpdif 0 0 0 0 25200 920 57800 2456 100160 5168 0 0 0 0 0 0 0 0
+node "RUN" 3 1494.35 4210 1248 m2 0 0 0 0 25584 1104 80000 2800 0 0 0 0 0 0 0 0 0 0
+node "a_3788_700#" 9 264.542 3788 700 hvpdif 0 0 0 0 23800 936 60440 2384 117200 6020 0 0 0 0 0 0 0 0
+node "a_3546_700#" 8 508.006 3546 700 hvpdif 0 0 0 0 29600 980 45920 1876 111712 5752 0 0 0 0 0 0 0 0
+node "a_3304_700#" 6 118.79 3304 700 hvpdif 0 0 0 0 33200 1044 33200 1044 118924 5424 0 0 0 0 0 0 0 0
+node "a_3062_700#" 7 263.041 3062 700 hvpdif 0 0 0 0 51600 1280 51600 1280 106128 5364 0 0 0 0 0 0 0 0
+node "PROG" 3 1300.59 4088 1248 m2 0 0 0 0 29572 996 80000 2800 0 0 0 0 0 0 0 0 0 0
+node "Vout[3]" 16 543.781 9562 938 m3 0 0 0 0 97080 3036 105824 2332 241760 11856 0 0 0 0 0 0 0 0
+node "Vout[2]" 18 669.963 9562 804 m3 0 0 0 0 93828 2988 110076 3800 260964 12656 0 0 0 0 0 0 0 0
+node "Vout[1]" 18 938.664 9562 664 m3 0 0 0 0 108860 3168 197840 4688 274760 13120 0 0 0 0 0 0 0 0
+node "Vout[0]" 18 2507.94 9562 524 m3 0 0 0 0 124540 3312 317312 5780 290028 13648 0 0 0 0 0 0 0 0
+node "VDD" 4 516.408 2856 1248 m2 0 0 0 0 119928 2332 63200 2828 0 0 0 0 0 0 0 0 0 0
+substrate "GND" 0 0 7268 1248 m2 0 0 0 0 1168520 12516 789788 25288 232708 6516 0 0 0 0 0 0 0 0
+cap "PROG" "a_3304_700#" 81.471
+cap "a_3062_174#" "a_3546_700#" 6.57066
+cap "a_3304_174#" "a_3062_450#" 0.0822904
+cap "a_3062_700#" "Vout[2]" 94.4216
+cap "Vout[3]" "a_3546_174#" 86.4597
+cap "a_3546_450#" "a_3304_700#" 35.4126
+cap "a_3062_174#" "a_3062_450#" 136.239
+cap "a_3788_700#" "a_3304_700#" 27.2855
+cap "PROG" "Vout[0]" 23.5297
+cap "a_3546_700#" "a_3062_450#" 61.4338
+cap "VDD" "a_3546_174#" 50.4512
+cap "PROG" "Vmid" 0.77601
+cap "a_3546_450#" "Vout[0]" 0.0169007
+cap "a_3788_700#" "Vout[0]" 0.0340268
+cap "a_3304_450#" "Vout[1]" 0.0163987
+cap "a_3546_450#" "Vmid" 0.489392
+cap "a_3788_700#" "Vmid" 52.3117
+cap "a_3788_174#" "a_3788_450#" 372.811
+cap "Vout[1]" "Vout[2]" 7564.79
+cap "Iin[2]" "Vd_P[2]" 45.6114
+cap "Vout[1]" "a_3062_700#" 67.8733
+cap "a_3304_700#" "a_3788_450#" 0.0571635
+cap "PROG" "RUN" 1689.46
+cap "Vout[0]" "a_3788_450#" 0.0139857
+cap "a_3546_174#" "a_3304_174#" 4992.71
+cap "a_3546_450#" "RUN" 76.6809
+cap "a_3304_450#" "a_3788_174#" 0.755531
+cap "a_3788_700#" "RUN" 75.7981
+cap "Vout[3]" "PROG" 91.9519
+cap "Vmid" "a_3788_450#" 0.582573
+cap "a_3062_174#" "a_3546_174#" 52.6582
+cap "a_3788_174#" "Vout[2]" 34.8679
+cap "VDD" "PROG" 1021.66
+cap "Vout[3]" "a_3788_700#" 163.776
+cap "a_3304_450#" "a_3304_700#" 262.823
+cap "a_3788_174#" "a_3062_700#" 0.00792237
+cap "VDD" "a_3546_450#" 29.5177
+cap "Vs" "Vsel" 51.2263
+cap "VDD" "a_3788_700#" 135.58
+cap "a_3304_700#" "Vout[2]" 2.85411
+cap "a_3304_450#" "Vout[0]" 0.0208161
+cap "Iin[3]" "Iin[2]" 45.6114
+cap "a_3304_700#" "a_3062_700#" 3152.16
+cap "a_3304_450#" "Vmid" 0.0766814
+cap "Vout[0]" "Vout[2]" 205.09
+cap "RUN" "a_3788_450#" 90.3372
+cap "Vmid" "Vout[2]" 237.519
+cap "Vout[0]" "a_3062_700#" 307.13
+cap "a_3788_174#" "Vout[1]" 25.7094
+cap "Vout[3]" "a_3788_450#" 0.0098392
+cap "a_3062_700#" "Vmid" 0.363972
+cap "VDD" "a_3788_450#" 260.588
+cap "PROG" "a_3304_174#" 33.7895
+cap "Vout[1]" "a_3304_700#" 140.991
+cap "a_3062_174#" "PROG" 47.2854
+cap "a_3546_700#" "PROG" 48.5537
+cap "a_3546_450#" "a_3304_174#" 5.2258
+cap "a_3304_450#" "RUN" 49.3732
+cap "a_3788_700#" "a_3304_174#" 2.55451
+cap "Iin[1]" "Vd_P[1]" 45.6114
+cap "a_3062_174#" "a_3546_450#" 11.0976
+cap "a_3062_174#" "a_3788_700#" 2.67276
+cap "PROG" "a_3062_450#" 49.5592
+cap "Vout[1]" "Vout[0]" 8351.1
+cap "a_3546_450#" "a_3546_700#" 638.582
+cap "Vbias" "Vout[2]" 121.108
+cap "a_3546_700#" "a_3788_700#" 2802.46
+cap "RUN" "Vout[2]" 26.3838
+cap "a_3546_450#" "a_3062_450#" 528.968
+cap "Vout[1]" "Vmid" 271.962
+cap "a_3788_700#" "a_3062_450#" 2043.02
+cap "a_3062_700#" "RUN" 163.4
+cap "VDD" "a_3304_450#" 50.2848
+cap "Vout[3]" "Vout[2]" 6841.58
+cap "Vout[3]" "a_3062_700#" 795.407
+cap "VDD" "Vout[2]" 39.2648
+cap "a_3788_174#" "a_3304_700#" 0.057774
+cap "VDD" "a_3062_700#" 191.489
+cap "a_3304_174#" "a_3788_450#" 14.9848
+cap "a_3062_174#" "a_3788_450#" 2298.13
+cap "Vout[0]" "VTUN" 0.0573986
+cap "a_3788_174#" "Vout[0]" 60.6925
+cap "a_3546_700#" "a_3788_450#" 0.219726
+cap "Vbias" "Vout[1]" 67.3354
+cap "Vout[1]" "RUN" 25.6372
+cap "a_3788_174#" "Vmid" 1931.4
+cap "a_3062_450#" "a_3788_450#" 15.4062
+cap "Vout[0]" "a_3304_700#" 0.0812202
+cap "Vout[3]" "Vout[1]" 147.966
+cap "a_3546_174#" "PROG" 33.3756
+cap "a_3304_700#" "Vmid" 0.522753
+cap "VDD" "Vout[1]" 64.2652
+cap "a_3304_450#" "a_3304_174#" 144.189
+cap "a_3546_450#" "a_3546_174#" 166.42
+cap "a_3304_450#" "a_3062_174#" 11.6385
+cap "a_3304_450#" "a_3546_700#" 300.903
+cap "Vout[0]" "Vmid" 514.575
+cap "a_3304_174#" "Vout[2]" 11.0817
+cap "a_3062_174#" "Vout[2]" 16.8505
+cap "a_3304_450#" "a_3062_450#" 2891.11
+cap "a_3546_700#" "Vout[2]" 101.907
+cap "a_3788_174#" "RUN" 61.569
+cap "Vbias" "a_3788_174#" 28.8443
+cap "a_3062_174#" "a_3062_700#" 12.386
+cap "a_3062_450#" "Vout[2]" 0.0207724
+cap "a_3546_700#" "a_3062_700#" 41.7921
+cap "Vout[3]" "a_3788_174#" 346.253
+cap "a_3062_450#" "a_3062_700#" 267.449
+cap "a_3304_700#" "RUN" 52.2554
+cap "VDD" "a_3788_174#" 147.524
+cap "a_3546_174#" "a_3788_450#" 20.4023
+cap "Vout[3]" "a_3304_700#" 52.1249
+cap "Vbias" "Vout[0]" 68.8797
+cap "Vout[0]" "RUN" 117.211
+cap "Vout[1]" "a_3304_174#" 254.118
+cap "VDD" "a_3304_700#" 35.5902
+cap "Vbias" "Vmid" 621.762
+cap "a_3062_174#" "Vout[1]" 2.46271
+cap "RUN" "Vmid" 1.13661
+cap "Vout[1]" "a_3546_700#" 0.113377
+cap "Vout[3]" "Vout[0]" 285.15
+cap "Vout[1]" "a_3062_450#" 0.929779
+cap "VDD" "Vout[0]" 248.921
+cap "Vout[3]" "Vmid" 955.048
+cap "a_3546_450#" "PROG" 76.1147
+cap "PROG" "a_3788_700#" 152.495
+cap "VDD" "Vmid" 0.502148
+cap "a_3546_450#" "a_3788_700#" 449.262
+cap "a_3546_174#" "Vout[2]" 258.22
+cap "a_3788_174#" "a_3304_174#" 127.437
+cap "a_3062_174#" "a_3788_174#" 80.4404
+cap "a_3788_174#" "a_3546_700#" 0.125142
+cap "Vbias" "Vout[3]" 44.7705
+cap "Vout[3]" "RUN" 44.287
+cap "a_3304_174#" "a_3304_700#" 0.0945514
+cap "a_3788_174#" "a_3062_450#" 0.150408
+cap "PROG" "a_3788_450#" 200.915
+cap "a_3062_174#" "a_3304_700#" 16.0638
+cap "VDD" "RUN" 531.649
+cap "a_3546_700#" "a_3304_700#" 2535.6
+cap "a_3546_450#" "a_3788_450#" 2671.54
+cap "a_3788_700#" "a_3788_450#" 1170.87
+cap "a_3304_174#" "Vout[0]" 1.52906
+cap "a_3304_700#" "a_3062_450#" 24.0976
+cap "a_3062_174#" "Vout[0]" 259.868
+cap "VDD" "Vout[3]" 40.0663
+cap "a_3304_174#" "Vmid" 1781.24
+cap "a_3546_700#" "Vout[0]" 0.0597221
+cap "a_3546_174#" "Vout[1]" 2.5038
+cap "a_3062_174#" "Vmid" 3105.67
+cap "Vout[0]" "a_3062_450#" 0.239202
+cap "a_3546_700#" "Vmid" 5.26093
+cap "a_3304_450#" "PROG" 61.3196
+cap "a_3062_450#" "Vmid" 0.0399835
+cap "a_3304_450#" "a_3546_450#" 2932.39
+cap "PROG" "Vout[2]" 33.4708
+cap "a_3304_450#" "a_3788_700#" 72.1714
+cap "PROG" "a_3062_700#" 134.513
+cap "a_3546_450#" "Vout[2]" 0.0098392
+cap "a_3788_700#" "Vout[2]" 0.0482355
+cap "a_3304_174#" "RUN" 36.056
+cap "a_3546_450#" "a_3062_700#" 0.130529
+cap "a_3788_174#" "a_3546_174#" 4167.18
+cap "a_3062_174#" "RUN" 114.118
+cap "a_3788_700#" "a_3062_700#" 13.4603
+cap "a_3546_700#" "RUN" 64.6909
+cap "Vout[3]" "a_3304_174#" 86.4132
+cap "Vout[3]" "a_3062_174#" 132.288
+cap "a_3062_450#" "RUN" 164.725
+cap "Vd_P[2]" "Vd_P[1]" 45.6114
+cap "VDD" "a_3304_174#" 45.1105
+cap "Vout[3]" "a_3546_700#" 28.2365
+cap "VDD" "a_3062_174#" 122.724
+cap "a_3304_450#" "a_3788_450#" 42.7403
+cap "Vout[1]" "PROG" 30.3177
+cap "Vout[3]" "a_3062_450#" 0.00597623
+cap "VDD" "a_3546_700#" 52.5524
+cap "Iin[1]" "Iin[0]" 45.6114
+cap "a_3546_174#" "Vout[0]" 1.44713
+cap "VDD" "a_3062_450#" 100.655
+cap "Vout[2]" "a_3788_450#" 0.0156121
+cap "a_3546_450#" "Vout[1]" 0.0312241
+cap "Vout[1]" "a_3788_700#" 0.0685962
+cap "a_3546_174#" "Vmid" 1796.61
+cap "a_3062_700#" "a_3788_450#" 0.0425336
+cap "Vd_P[0]" "Iin[0]" 45.6114
+cap "a_3788_174#" "PROG" 144.366
+cap "Vd_P[3]" "Iin[3]" 45.6114
+cap "a_3062_174#" "a_3304_174#" 4492.02
+cap "a_3304_450#" "a_3062_700#" 0.455355
+cap "a_3546_450#" "a_3788_174#" 1.03128
+cap "a_3546_174#" "RUN" 36.7945
+cap "Vout[1]" "a_3788_450#" 0.025351
+cap "a_3788_174#" "a_3788_700#" 0.216488
+cap "a_3546_700#" "a_3304_174#" 0.127173
+cap "VINJ" "Vs" 56.9181
+device msubckt sg13_hv_nmos 8852 180 8853 181 l=92 w=300 "GND" "Vbias" 184 0 "GND" 300 27600,784 "Vmid" 300 27600,784
+device msubckt sg13_hv_nmos 8020 180 8021 181 l=400 w=650 "GND" "Vmid" 800 0 "GND" 650 45500,1440 "a_3788_174#" 650 45500,1440
+device msubckt sg13_hv_nmos 7328 180 7329 181 l=400 w=650 "GND" "Vmid" 800 0 "GND" 650 45500,1440 "a_3546_174#" 650 45500,1440
+device msubckt sg13_hv_nmos 6636 180 6637 181 l=400 w=650 "GND" "Vmid" 800 0 "GND" 650 45500,1440 "a_3304_174#" 650 45500,1440
+device msubckt sg13_hv_nmos 5944 180 5945 181 l=400 w=650 "GND" "Vmid" 800 0 "GND" 650 45500,1440 "a_3062_174#" 650 45500,1440
+device msubckt sg13_hv_nmos 4816 348 4817 349 l=100 w=100 "GND" "RUN" 200 0 "a_3788_174#" 100 17400,548 "a_3788_450#" 100 7600,252
+device msubckt sg13_hv_nmos 4674 348 4675 349 l=100 w=100 "GND" "RUN" 200 0 "a_3546_174#" 100 17400,548 "a_3546_450#" 100 7600,252
+device msubckt sg13_hv_nmos 4532 348 4533 349 l=100 w=100 "GND" "RUN" 200 0 "a_3304_174#" 100 17400,548 "a_3304_450#" 100 7600,252
+device msubckt sg13_hv_nmos 4390 348 4391 349 l=100 w=100 "GND" "RUN" 200 0 "a_3062_174#" 100 17400,548 "a_3062_450#" 100 7600,252
+device msubckt sg13_hv_nmos 4816 600 4817 601 l=100 w=100 "GND" "PROG" 200 0 "a_3788_450#" 100 7600,252 "a_3788_700#" 100 7500,250
+device msubckt sg13_hv_nmos 4674 600 4675 601 l=100 w=100 "GND" "PROG" 200 0 "a_3546_450#" 100 7600,252 "a_3546_700#" 100 7500,250
+device msubckt sg13_hv_nmos 4532 600 4533 601 l=100 w=100 "GND" "PROG" 200 0 "a_3304_450#" 100 7600,252 "a_3304_700#" 100 7500,250
+device msubckt sg13_hv_nmos 4390 600 4391 601 l=100 w=100 "GND" "PROG" 200 0 "a_3062_450#" 100 7600,252 "a_3062_700#" 100 7500,250
+device msubckt sg13_hv_nmos 8588 764 8589 765 l=300 w=1000 "GND" "a_3788_174#" 600 0 "Vmid" 1000 70000,2140 "Vout[3]" 1000 70000,2140
+device msubckt sg13_hv_nmos 7440 764 7441 765 l=300 w=1000 "GND" "a_3546_174#" 600 0 "Vmid" 1000 70000,2140 "Vout[2]" 1000 70000,2140
+device msubckt sg13_hv_nmos 6172 764 6173 765 l=300 w=1000 "GND" "a_3304_174#" 600 0 "Vmid" 1000 70000,2140 "Vout[1]" 1000 70000,2140
+device msubckt sg13_hv_nmos 5024 764 5025 765 l=300 w=1000 "GND" "a_3062_174#" 600 0 "Vmid" 1000 70000,2140 "Vout[0]" 1000 70000,2140
+device msubckt sg13_hv_nmos 4816 850 4817 851 l=100 w=100 "GND" "RUN" 200 0 "a_3788_700#" 100 7500,250 "Vout[3]" 100 17400,548
+device msubckt sg13_hv_nmos 4674 850 4675 851 l=100 w=100 "GND" "RUN" 200 0 "a_3546_700#" 100 7500,250 "Vout[2]" 100 17400,548
+device msubckt sg13_hv_nmos 4532 850 4533 851 l=100 w=100 "GND" "RUN" 200 0 "a_3304_700#" 100 7500,250 "Vout[1]" 100 17400,548
+device msubckt sg13_hv_nmos 4390 850 4391 851 l=100 w=100 "GND" "RUN" 200 0 "a_3062_700#" 100 7500,250 "Vout[0]" 100 17400,548
+device msubckt sg13_hv_pmos 3788 350 3789 351 l=100 w=200 "VDD" "PROG" 200 0 "a_3788_174#" 200 35200,752 "a_3788_450#" 200 15000,350
+device msubckt sg13_hv_pmos 3546 350 3547 351 l=100 w=200 "VDD" "PROG" 200 0 "a_3546_174#" 200 35200,752 "a_3546_450#" 200 15000,350
+device msubckt sg13_hv_pmos 3304 350 3305 351 l=100 w=200 "VDD" "PROG" 200 0 "a_3304_174#" 200 35200,752 "a_3304_450#" 200 15000,350
+device msubckt sg13_hv_pmos 3062 350 3063 351 l=100 w=200 "VDD" "PROG" 200 0 "a_3062_174#" 200 35200,752 "a_3062_450#" 200 15000,350
+device msubckt sg13_hv_pmos 3788 600 3789 601 l=100 w=200 "VDD" "RUN" 200 0 "a_3788_450#" 200 15000,350 "a_3788_700#" 200 15000,350
+device msubckt sg13_hv_pmos 3546 600 3547 601 l=100 w=200 "VDD" "RUN" 200 0 "a_3546_450#" 200 15000,350 "a_3546_700#" 200 15000,350
+device msubckt sg13_hv_pmos 3304 600 3305 601 l=100 w=200 "VDD" "RUN" 200 0 "a_3304_450#" 200 15000,350 "a_3304_700#" 200 15000,350
+device msubckt sg13_hv_pmos 3062 600 3063 601 l=100 w=200 "VDD" "RUN" 200 0 "a_3062_450#" 200 15000,350 "a_3062_700#" 200 15000,350
+device msubckt sg13_hv_pmos 3788 850 3789 851 l=100 w=200 "VDD" "PROG" 200 0 "a_3788_700#" 200 15000,350 "Vout[3]" 200 34800,748
+device msubckt sg13_hv_pmos 3546 850 3547 851 l=100 w=200 "VDD" "PROG" 200 0 "a_3546_700#" 200 15000,350 "Vout[2]" 200 34800,748
+device msubckt sg13_hv_pmos 3304 850 3305 851 l=100 w=200 "VDD" "PROG" 200 0 "a_3304_700#" 200 15000,350 "Vout[1]" 200 34800,748
+device msubckt sg13_hv_pmos 3062 850 3063 851 l=100 w=200 "VDD" "PROG" 200 0 "a_3062_700#" 200 15000,350 "Vout[0]" 200 34800,748
+cap "IndirectVMM_4x1_0/FG[3]" "IndirectVMM_4x1_0/Vd_R[3]" 0.0145871
+cap "IndirectVMM_4x1_0/VINJ" "IndirectVMM_4x1_0/Vs" -56.9181
+cap "IndirectVMM_4x1_0/Vd_R[3]" "IndirectVMM_4x1_0/Vd_P[3]" -45.6114
+cap "IndirectVMM_4x1_0/Vd_R[0]" "IndirectVMM_4x1_0/GND" 22.8984
+cap "IndirectVMM_4x1_0/Vg" "IndirectVMM_4x1_0/VINJ" 1.77636e-15
+cap "IndirectVMM_4x1_0/a_1144_628#" "IndirectVMM_4x1_0/Vd_R[1]" 0.213546
+cap "IndirectVMM_4x1_0/GND" "IndirectVMM_4x1_0/a_1494_1240#" 3.53573
+cap "IndirectVMM_4x1_0/a_1144_628#" "IndirectVMM_4x1_0/FG[2]" 0.0274674
+cap "IndirectVMM_4x1_0/FG[3]" "IndirectVMM_4x1_0/GND" 1.37595
+cap "IndirectVMM_4x1_0/Vd_R[3]" "IndirectVMM_4x1_0/VINJ" 0.0364562
+cap "IndirectVMM_4x1_0/Vd_R[2]" "IndirectVMM_4x1_0/Vd_P[2]" -45.6114
+cap "IndirectVMM_4x1_0/Vd_R[2]" "IndirectVMM_4x1_0/FG[2]" 0.00295882
+cap "IndirectVMM_4x1_0/GND" "IndirectVMM_4x1_0/Vd_R[1]" 0.637794
+cap "IndirectVMM_4x1_0/Vd_R[2]" "IndirectVMM_4x1_0/Vsel" 0.0400791
+cap "IndirectVMM_4x1_0/Vd_R[2]" "IndirectVMM_4x1_0/Vs" -7.10543e-15
+cap "IndirectVMM_4x1_0/FG[1]" "IndirectVMM_4x1_0/a_1144_1188#" 0.0708196
+cap "IndirectVMM_4x1_0/FG[2]" "IndirectVMM_4x1_0/GND" 1.19835
+cap "IndirectVMM_4x1_0/GND" "IndirectVMM_4x1_0/Vsel" 0.374425
+cap "IndirectVMM_4x1_0/Vg" "IndirectVMM_4x1_0/a_1144_628#" 0.0180685
+cap "IndirectVMM_4x1_0/GND" "IndirectVMM_4x1_0/Vd_P[0]" 0.109397
+cap "IndirectVMM_4x1_0/Vd_R[2]" "IndirectVMM_4x1_0/Vg" 0.0629092
+cap "IndirectVMM_4x1_0/Vd_R[2]" "IndirectVMM_4x1_0/VINJ" 0.000351858
+cap "IndirectVMM_4x1_0/Vd_R[0]" "IndirectVMM_4x1_0/VTUN" -1.11022e-16
+cap "IndirectVMM_4x1_0/Vg" "IndirectVMM_4x1_0/GND" 7.15451
+cap "IndirectVMM_4x1_0/VINJ" "IndirectVMM_4x1_0/GND" -4.57497
+cap "IndirectVMM_4x1_0/GND" "IndirectVMM_4x1_0/FG[0]" 8.6322
+cap "IndirectVMM_4x1_0/Vd_R[2]" "IndirectVMM_4x1_0/Vd_R[3]" -45.6114
+cap "IndirectVMM_4x1_0/Vd_P[1]" "IndirectVMM_4x1_0/Vd_R[1]" -45.6114
+cap "IndirectVMM_4x1_0/Vd_R[3]" "IndirectVMM_4x1_0/GND" 0.578895
+cap "IndirectVMM_4x1_0/Vd_P[1]" "IndirectVMM_4x1_0/Vd_P[2]" -45.6114
+cap "IndirectVMM_4x1_0/VTUN" "IndirectVMM_4x1_0/Vd_R[1]" -5.55112e-17
+cap "VDD" "IndirectVMM_4x1_0/FG[1]" 0.112611
+cap "IndirectVMM_4x1_0/a_1144_628#" "IndirectVMM_4x1_0/GND" 1.24079
+cap "IndirectVMM_4x1_0/a_1494_576#" "IndirectVMM_4x1_0/FG[3]" 0.00808913
+cap "IndirectVMM_4x1_0/Vd_R[2]" "IndirectVMM_4x1_0/GND" 0.505049
+cap "IndirectVMM_4x1_0/a_1494_576#" "IndirectVMM_4x1_0/Vd_P[3]" 0.00613014
+cap "IndirectVMM_4x1_0/FG[1]" "IndirectVMM_4x1_0/Vd_R[1]" 3.55271e-15
+cap "IndirectVMM_4x1_0/Vd_R[0]" "IndirectVMM_4x1_0/a_1494_1240#" 1.04511
+cap "IndirectVMM_4x1_0/Vg" "IndirectVMM_4x1_0/a_1144_1188#" 0.054403
+cap "IndirectVMM_4x1_0/FG[1]" "IndirectVMM_4x1_0/Vd_P[2]" 2.77556e-17
+cap "IndirectVMM_4x1_0/a_1494_576#" "IndirectVMM_4x1_0/FG[2]" 0.0107855
+cap "IndirectVMM_4x1_0/FG[0]" "IndirectVMM_4x1_0/a_1144_1188#" 0.00855013
+cap "IndirectVMM_4x1_0/Vd_R[0]" "IndirectVMM_4x1_0/Vd_R[1]" -45.6114
+cap "IndirectVMM_4x1_0/FG[3]" "VDD" 0.0482619
+cap "IndirectVMM_4x1_0/Vd_R[1]" "IndirectVMM_4x1_0/a_1494_1240#" 4.44089e-16
+cap "IndirectVMM_4x1_0/FG[2]" "IndirectVMM_4x1_0/Vd_R[0]" 0.00970454
+cap "IndirectVMM_4x1_0/Vd_R[3]" "IndirectVMM_4x1_0/VTUN" -4.44089e-16
+cap "IndirectVMM_4x1_0/a_1494_576#" "IndirectVMM_4x1_0/Vg" 0.0430928
+cap "IndirectVMM_4x1_0/Vd_R[0]" "IndirectVMM_4x1_0/Vd_P[0]" -45.6114
+cap "IndirectVMM_4x1_0/FG[2]" "VDD" 0.0643493
+cap "IndirectVMM_4x1_0/Vd_P[0]" "IndirectVMM_4x1_0/a_1494_1240#" 0.0052787
+cap "IndirectVMM_4x1_0/Vd_R[2]" "IndirectVMM_4x1_0/a_1144_1188#" 2.22045e-16
+cap "IndirectVMM_4x1_0/Vg" "IndirectVMM_4x1_0/Vd_R[0]" 0.0182005
+cap "IndirectVMM_4x1_0/Vd_R[0]" "IndirectVMM_4x1_0/VINJ" 0.00211115
+cap "IndirectVMM_4x1_0/Vd_R[0]" "IndirectVMM_4x1_0/FG[0]" 0.0062788
+cap "IndirectVMM_4x1_0/GND" "IndirectVMM_4x1_0/a_1144_1188#" 1.69258
+cap "IndirectVMM_4x1_0/FG[0]" "IndirectVMM_4x1_0/a_1494_1240#" 0.0279572
+cap "IndirectVMM_4x1_0/a_1494_576#" "IndirectVMM_4x1_0/a_1144_628#" 5.68434e-14
+cap "VDD" "IndirectVMM_4x1_0/FG[0]" 0.0482619
+cap "IndirectVMM_4x1_0/Vsel" "IndirectVMM_4x1_0/Vs" -51.2263
+cap "IndirectVMM_4x1_0/Vg" "IndirectVMM_4x1_0/Vd_R[1]" -1.06581e-14
+cap "IndirectVMM_4x1_0/Vd_R[2]" "IndirectVMM_4x1_0/FG[1]" -4.44089e-16
+cap "IndirectVMM_4x1_0/VINJ" "IndirectVMM_4x1_0/Vd_R[1]" 0.0201652
+cap "IndirectVMM_4x1_0/a_1494_576#" "IndirectVMM_4x1_0/GND" 0.980195
+cap "IndirectVMM_4x1_0/GND" "IndirectVMM_4x1_0/FG[1]" 4.03065
+cap "IndirectVMM_4x1_0/VINJ" "IndirectVMM_4x1_0/Vd_P[2]" -7.10543e-15
+cap "IndirectVMM_4x1_0/Vg" "IndirectVMM_4x1_0/Vsel" -1.77636e-15
+cap "IndirectVMM_4x1_0/FG[1]" "VDD" 1.33827
+cap "IndirectVMM_4x1_0/FG[2]" "IndirectVMM_4x1_0/Vd_R[2]" 0.0904098
+cap "IndirectVMM_4x1_0/FG[3]" "IndirectVMM_4x1_0/GND" 14.2669
+cap "IndirectVMM_4x1_0/a_1494_576#" "IndirectVMM_4x1_0/a_1144_628#" 2.84217e-14
+cap "IndirectVMM_4x1_0/FG[2]" "IndirectVMM_4x1_0/Vd_R[0]" 0.0227163
+cap "IndirectVMM_4x1_0/Vd_P[0]" "IndirectVMM_4x1_0/GND" 0.109397
+cap "Vout[2]" "IndirectVMM_4x1_0/FG[0]" 0.0139901
+cap "IndirectVMM_4x1_0/FG[2]" "IndirectVMM_4x1_0/GND" 14.2705
+cap "IndirectVMM_4x1_0/a_1144_1188#" "PROG" -2.22045e-16
+cap "IndirectVMM_4x1_0/a_1494_1240#" "IndirectVMM_4x1_0/FG[0]" 7.48368
+cap "IndirectVMM_4x1_0/a_1494_1240#" "IndirectVMM_4x1_0/Vd_R[0]" 2.45081
+cap "IndirectVMM_4x1_0/FG[2]" "IndirectVMM_4x1_0/Vd_R[1]" 3.04751
+cap "IndirectVMM_4x1_0/a_1494_1240#" "IndirectVMM_4x1_0/Vsel" 0.0192458
+cap "IndirectVMM_4x1_0/a_1494_1240#" "IndirectVMM_4x1_0/VTUN" 7.10628
+cap "IndirectVMM_4x1_0/VTUN" "IndirectVMM_4x1_0/Vd_R[3]" 3.15604
+cap "IndirectVMM_4x1_0/a_1494_1240#" "IndirectVMM_4x1_0/GND" 5.77309
+cap "IndirectVMM_4x1_0/Vd_R[0]" "IndirectVMM_4x1_0/Vd_R[2]" 1.4057
+cap "IndirectVMM_4x1_0/a_1144_1188#" "IndirectVMM_4x1_0/Vd_R[0]" 2.10855
+cap "IndirectVMM_4x1_0/Vd_R[2]" "IndirectVMM_4x1_0/Vsel" 0.0286479
+cap "IndirectVMM_4x1_0/FG[3]" "VDD" 1.33827
+cap "IndirectVMM_4x1_0/VTUN" "IndirectVMM_4x1_0/Vd_R[2]" 3.37131
+cap "IndirectVMM_4x1_0/GND" "IndirectVMM_4x1_0/Vd_R[3]" 1.81306
+cap "IndirectVMM_4x1_0/a_1144_1188#" "IndirectVMM_4x1_0/VTUN" 3.93983
+cap "IndirectVMM_4x1_0/FG[2]" "IndirectVMM_4x1_0/a_1144_628#" 0.098152
+cap "IndirectVMM_4x1_0/FG[0]" "IndirectVMM_4x1_0/Vd_R[0]" 3.109
+cap "IndirectVMM_4x1_0/a_1494_1240#" "IndirectVMM_4x1_0/VINJ" 0.0645765
+cap "IndirectVMM_4x1_0/a_1494_1240#" "IndirectVMM_4x1_0/Vg" 0.554604
+cap "IndirectVMM_4x1_0/GND" "IndirectVMM_4x1_0/Vd_R[2]" 1.74302
+cap "IndirectVMM_4x1_0/a_1494_576#" "IndirectVMM_4x1_0/FG[3]" 0.142621
+cap "IndirectVMM_4x1_0/a_1144_1188#" "IndirectVMM_4x1_0/GND" 3.51103
+cap "IndirectVMM_4x1_0/Vd_R[3]" "IndirectVMM_4x1_0/Vg" 0.189037
+cap "IndirectVMM_4x1_0/Vd_R[0]" "IndirectVMM_4x1_0/VTUN" 97.8214
+cap "IndirectVMM_4x1_0/FG[0]" "IndirectVMM_4x1_0/GND" 21.0644
+cap "IndirectVMM_4x1_0/FG[2]" "VDD" 1.32768
+cap "IndirectVMM_4x1_0/VINJ" "IndirectVMM_4x1_0/Vd_R[2]" 0.057125
+cap "IndirectVMM_4x1_0/Vd_R[2]" "IndirectVMM_4x1_0/Vg" 0.490323
+cap "IndirectVMM_4x1_0/a_1144_1188#" "IndirectVMM_4x1_0/Vg" 0.0497217
+cap "IndirectVMM_4x1_0/GND" "IndirectVMM_4x1_0/Vd_R[0]" 28.7699
+cap "IndirectVMM_4x1_0/FG[3]" "a_3304_174#" 0.0760451
+cap "IndirectVMM_4x1_0/GND" "IndirectVMM_4x1_0/Vsel" 0.429959
+cap "IndirectVMM_4x1_0/GND" "IndirectVMM_4x1_0/VTUN" 184.123
+cap "IndirectVMM_4x1_0/a_1494_576#" "IndirectVMM_4x1_0/FG[2]" 0.0890592
+cap "IndirectVMM_4x1_0/FG[0]" "Vout[1]" 0.0446171
+cap "IndirectVMM_4x1_0/a_1494_1240#" "IndirectVMM_4x1_0/FG[1]" 0.0482722
+cap "IndirectVMM_4x1_0/a_1144_1188#" "IndirectVMM_4x1_0/Vd_R[1]" -5.68434e-14
+cap "IndirectVMM_4x1_0/VINJ" "IndirectVMM_4x1_0/Vd_R[0]" 0.0785046
+cap "IndirectVMM_4x1_0/Vd_R[0]" "IndirectVMM_4x1_0/Vg" 0.515389
+cap "IndirectVMM_4x1_0/Vd_R[1]" "IndirectVMM_4x1_0/Vd_R[0]" 1.4057
+cap "IndirectVMM_4x1_0/a_1144_1188#" "IndirectVMM_4x1_0/FG[1]" 0.437086
+cap "IndirectVMM_4x1_0/VINJ" "IndirectVMM_4x1_0/GND" 1.49064
+cap "IndirectVMM_4x1_0/Vd_R[1]" "IndirectVMM_4x1_0/Vsel" 0.0297246
+cap "IndirectVMM_4x1_0/GND" "IndirectVMM_4x1_0/Vg" 1.22258
+cap "IndirectVMM_4x1_0/Vd_R[1]" "IndirectVMM_4x1_0/VTUN" 12.0123
+cap "IndirectVMM_4x1_0/a_1144_628#" "IndirectVMM_4x1_0/Vd_R[2]" -2.84217e-13
+cap "IndirectVMM_4x1_0/FG[3]" "a_3062_174#" 0.152842
+cap "IndirectVMM_4x1_0/Vd_R[1]" "IndirectVMM_4x1_0/GND" 3.57086
+cap "IndirectVMM_4x1_0/FG[1]" "IndirectVMM_4x1_0/Vd_R[0]" 3.109
+cap "IndirectVMM_4x1_0/a_1494_576#" "IndirectVMM_4x1_0/Vd_R[3]" 1.13687e-13
+cap "IndirectVMM_4x1_0/a_1494_1240#" "Vout[0]" 2.22045e-16
+cap "IndirectVMM_4x1_0/a_1144_628#" "IndirectVMM_4x1_0/VTUN" 2.59168
+cap "IndirectVMM_4x1_0/Vd_R[1]" "IndirectVMM_4x1_0/VINJ" 0.131106
+cap "IndirectVMM_4x1_0/Vd_R[1]" "IndirectVMM_4x1_0/Vg" 0.115596
+cap "IndirectVMM_4x1_0/FG[1]" "IndirectVMM_4x1_0/GND" 15.8652
+cap "IndirectVMM_4x1_0/FG[0]" "VDD" 1.33827
+cap "IndirectVMM_4x1_0/GND" "IndirectVMM_4x1_0/a_1144_628#" 3.0994
+cap "IndirectVMM_4x1_0/FG[0]" "Vout[0]" 0.0681489
+cap "IndirectVMM_4x1_0/a_1144_628#" "IndirectVMM_4x1_0/Vg" 0.121588
+cap "IndirectVMM_4x1_0/FG[3]" "a_3546_174#" 0.0196897
+cap "IndirectVMM_4x1_0/a_1494_576#" "IndirectVMM_4x1_0/VTUN" 2.46166
+cap "IndirectVMM_4x1_0/FG[1]" "IndirectVMM_4x1_0/Vd_R[1]" 2.05784
+cap "IndirectVMM_4x1_0/Vd_R[1]" "IndirectVMM_4x1_0/a_1144_628#" 0.213546
+cap "IndirectVMM_4x1_0/a_1494_576#" "IndirectVMM_4x1_0/GND" 2.36145
+cap "IndirectVMM_4x1_0/FG[3]" "IndirectVMM_4x1_0/Vd_R[3]" 0.0923399
+cap "IndirectVMM_4x1_0/FG[1]" "IndirectVMM_4x1_0/a_1144_628#" 0.297745
+cap "a_3062_174#" "IndirectVMM_4x1_0/VTUN" 0.0691238
+cap "RUN" "IndirectVMM_4x1_0/VTUN" 0.467392
+cap "Vout[2]" "Vout[1]" -2.27374e-13
+cap "RUN" "IndirectVMM_4x1_0/Vd_R[2]" 0.145289
+cap "Vout[0]" "IndirectVMM_4x1_0/VTUN" 0.690735
+cap "VDD" "PROG" 5.68434e-13
+cap "VDD" "Vout[2]" -1.42109e-14
+cap "PROG" "a_3546_700#" 0.0935011
+cap "a_3062_174#" "IndirectVMM_4x1_0/FG[3]" 0.422551
+cap "IndirectVMM_4x1_0/VTUN" "Vout[1]" 0.121569
+cap "IndirectVMM_4x1_0/GND" "PROG" 0.0443767
+cap "a_3062_174#" "IndirectVMM_4x1_0/GND" 0.00292123
+cap "RUN" "IndirectVMM_4x1_0/GND" 0.0329187
+cap "a_3304_700#" "PROG" 0.219321
+cap "Vout[0]" "IndirectVMM_4x1_0/GND" 0.000876369
+cap "IndirectVMM_4x1_0/VTUN" "PROG" 0.928678
+merge "IndirectVMM_4x1_0/VTUN" "VTUN" -226.918 0 0 0 0 0 0 -4000 -260 0 0 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/GND" "GND" -351.626 0 0 0 0 0 0 -10944 -644 0 0 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/VINJ" "VINJ" -35.1514 0 0 0 0 0 0 -4000 -260 0 0 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/a_1494_1240#" "a_3062_700#" -28.6588 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/Vd_R[3]" "a_3788_450#" -44.8004 0 0 0 0 0 0 0 0 -4232 -356 0 0 0 0 0 0 0 0
+merge "a_3788_450#" "Iin[3]"
+merge "IndirectVMM_4x1_0/Vd_R[2]" "Iin[2]" -45.0335 0 0 0 0 0 0 0 0 -4232 -356 0 0 0 0 0 0 0 0
+merge "Iin[2]" "a_3546_450#"
+merge "IndirectVMM_4x1_0/Vd_R[1]" "a_3304_450#" -59.1221 0 0 0 0 0 0 0 0 -4232 -356 0 0 0 0 0 0 0 0
+merge "a_3304_450#" "Iin[1]"
+merge "IndirectVMM_4x1_0/Vd_R[0]" "Iin[0]" -149.495 0 0 0 0 0 0 0 0 -4232 -356 0 0 0 0 0 0 0 0
+merge "Iin[0]" "a_3062_450#"
+merge "IndirectVMM_4x1_0/Vs" "Vs" -30.5405 0 0 0 0 0 0 -4000 -260 0 0 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/a_1494_576#" "a_3788_700#" -14.479 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/a_1144_1188#" "a_3304_700#" -20.524 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/Vd_P[3]" "Vd_P[3]" -37.5768 0 0 0 0 0 0 0 0 -4232 -276 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/Vg" "Vg" -38.1201 0 0 0 0 0 0 -4000 -260 0 0 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/Vd_P[2]" "Vd_P[2]" -30.6188 0 0 0 0 0 0 0 0 -4232 -276 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/Vd_P[1]" "Vd_P[1]" -30.6188 0 0 0 0 0 0 0 0 -4232 -276 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/Vd_P[0]" "Vd_P[0]" -37.8462 0 0 0 0 0 0 0 0 -4232 -276 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/Vsel" "Vsel" -39.6687 0 0 0 0 0 0 -4000 -260 0 0 0 0 0 0 0 0 0 0
+merge "IndirectVMM_4x1_0/a_1144_628#" "a_3546_700#" -16.0816 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0

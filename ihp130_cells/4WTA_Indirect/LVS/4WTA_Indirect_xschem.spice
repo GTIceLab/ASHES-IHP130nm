@@ -1,0 +1,64 @@
+** sch_path: /home/cwhite324/ASHES-IHP130nm/ihp130_cells/4WTA_Indirect/4WTA_Indirect.sch
+.subckt 4WTA_Indirect RUN VDD PROG Vout[0] Vout[1] Vout[2] Vout[3] Vmid GND VINJ Vsel VTUN Vg Vs Iin[0] Iin[1] Iin[2] Iin[3] Vbias
++ Vd_P[0] Vd_P[1] Vd_P[2] Vd_P[3]
+*.PININFO RUN:I VDD:B PROG:I Vout[0:3]:O Vmid:B GND:B VINJ:B Vsel:I VTUN:B Vg:B Vs:B Iin[0:3]:B Vbias:B Vd_P[0:3]:B
+M5[0] Vd_R[0] RUN Vout[0] GND sg13_hv_nmos w=0.5u l=0.5u ng=1 m=1
+M5[1] Vd_R[1] RUN Vout[1] GND sg13_hv_nmos w=0.5u l=0.5u ng=1 m=1
+M5[2] Vd_R[2] RUN Vout[2] GND sg13_hv_nmos w=0.5u l=0.5u ng=1 m=1
+M5[3] Vd_R[3] RUN Vout[3] GND sg13_hv_nmos w=0.5u l=0.5u ng=1 m=1
+M6[0] Vd_R[0] PROG Vout[0] VDD sg13_hv_pmos w=1u l=0.5u ng=1 m=1
+M6[1] Vd_R[1] PROG Vout[1] VDD sg13_hv_pmos w=1u l=0.5u ng=1 m=1
+M6[2] Vd_R[2] PROG Vout[2] VDD sg13_hv_pmos w=1u l=0.5u ng=1 m=1
+M6[3] Vd_R[3] PROG Vout[3] VDD sg13_hv_pmos w=1u l=0.5u ng=1 m=1
+M7[0] Vd_R[0] PROG Iin[0] GND sg13_hv_nmos w=0.5u l=0.5u ng=1 m=1
+M7[1] Vd_R[1] PROG Iin[1] GND sg13_hv_nmos w=0.5u l=0.5u ng=1 m=1
+M7[2] Vd_R[2] PROG Iin[2] GND sg13_hv_nmos w=0.5u l=0.5u ng=1 m=1
+M7[3] Vd_R[3] PROG Iin[3] GND sg13_hv_nmos w=0.5u l=0.5u ng=1 m=1
+M8[0] Vd_R[0] RUN Iin[0] VDD sg13_hv_pmos w=1u l=0.5u ng=1 m=1
+M8[1] Vd_R[1] RUN Iin[1] VDD sg13_hv_pmos w=1u l=0.5u ng=1 m=1
+M8[2] Vd_R[2] RUN Iin[2] VDD sg13_hv_pmos w=1u l=0.5u ng=1 m=1
+M8[3] Vd_R[3] RUN Iin[3] VDD sg13_hv_pmos w=1u l=0.5u ng=1 m=1
+M9[0] Vm[0] RUN Iin[0] GND sg13_hv_nmos w=0.5u l=0.5u ng=1 m=1
+M9[1] Vm[1] RUN Iin[1] GND sg13_hv_nmos w=0.5u l=0.5u ng=1 m=1
+M9[2] Vm[2] RUN Iin[2] GND sg13_hv_nmos w=0.5u l=0.5u ng=1 m=1
+M9[3] Vm[3] RUN Iin[3] GND sg13_hv_nmos w=0.5u l=0.5u ng=1 m=1
+M10[0] Vm[0] PROG Iin[0] VDD sg13_hv_pmos w=1u l=0.5u ng=1 m=1
+M10[1] Vm[1] PROG Iin[1] VDD sg13_hv_pmos w=1u l=0.5u ng=1 m=1
+M10[2] Vm[2] PROG Iin[2] VDD sg13_hv_pmos w=1u l=0.5u ng=1 m=1
+M10[3] Vm[3] PROG Iin[3] VDD sg13_hv_pmos w=1u l=0.5u ng=1 m=1
+M13[0] Vout[0] Vm[0] Vmid GND sg13_hv_nmos w=5u l=1.5u ng=1 m=1
+M13[1] Vout[1] Vm[1] Vmid GND sg13_hv_nmos w=5u l=1.5u ng=1 m=1
+M13[2] Vout[2] Vm[2] Vmid GND sg13_hv_nmos w=5u l=1.5u ng=1 m=1
+M13[3] Vout[3] Vm[3] Vmid GND sg13_hv_nmos w=5u l=1.5u ng=1 m=1
+M14[0] GND Vmid Vm[0] GND sg13_hv_nmos w=3.25u l=2u ng=1 m=1
+M14[1] GND Vmid Vm[1] GND sg13_hv_nmos w=3.25u l=2u ng=1 m=1
+M14[2] GND Vmid Vm[2] GND sg13_hv_nmos w=3.25u l=2u ng=1 m=1
+M14[3] GND Vmid Vm[3] GND sg13_hv_nmos w=3.25u l=2u ng=1 m=1
+M15 Vmid Vbias GND GND sg13_hv_nmos w=1.5u l=0.46u ng=1 m=1
+x1 Vd_P[0] Vd_P[1] Vd_P[2] Vd_P[3] Vd_R[0] Vd_R[1] Vd_R[2] Vd_R[3] Vg Vs VTUN Vsel VINJ GND net1 IndirectVMM_4x1
+.ends
+
+* expanding   symbol:  IndirectVMM_4x1/IndirectVMM_4x1.sym # of pins=16
+** sym_path: /home/cwhite324/ASHES-IHP130nm/ihp130_cells/IndirectVMM_4x1/IndirectVMM_4x1.sym
+** sch_path: /home/cwhite324/ASHES-IHP130nm/ihp130_cells/IndirectVMM_4x1/IndirectVMM_4x1.sch
+.subckt IndirectVMM_4x1 Vd_P[0] Vd_P[1] Vd_P[2] Vd_P[3] Vd_R[0] Vd_R[1] Vd_R[2] Vd_R[3] Vg Vs VTUN Vsel VINJ GND VSel
+*.PININFO Vd_R[0:3]:B Vd_P[0:3]:B Vg:B VTUN:B Vsel:B GND:B VINJ:B Vs:B
+x1[0] Vs Vg Vsel VTUN Vd_R[0] Vd_P[0] VINJ GND FG_Indirect
+x1[1] Vs Vg Vsel VTUN Vd_R[1] Vd_P[1] VINJ GND FG_Indirect
+x1[2] Vs Vg Vsel VTUN Vd_R[2] Vd_P[2] VINJ GND FG_Indirect
+x1[3] Vs Vg Vsel VTUN Vd_R[3] Vd_P[3] VINJ GND FG_Indirect
+.ends
+
+
+* expanding   symbol:  FG_Indirect/FG_Indirect.sym # of pins=16
+** sym_path: /home/cwhite324/ASHES-IHP130nm/ihp130_cells/FG_Indirect/FG_Indirect.sym
+** sch_path: /home/cwhite324/ASHES-IHP130nm/ihp130_cells/FG_Indirect/FG_Indirect.sch
+.subckt FG_Indirect Vs Vg Vsel VTUN Vd_R Vd_P VINJ GND
+*.PININFO VINJ:B Vsel:B Vg:B Vs:B Vd_R:B Vd_P:B VTUN:B GND:B
+M4 net1 Vsel VINJ VINJ sg13_hv_pmos w=0.42u l=0.5u ng=1 m=1
+M5 Vd_P Vfg net1 VINJ sg13_hv_pmos w=0.42u l=0.5u ng=1 m=1
+M1 Vd_R Vfg Vs VINJ sg13_hv_pmos w=0.42u l=0.5u ng=1 m=1
+XC3 VTUN Vfg SVaricap w=7.0e-6 l=7.0e-6 m=1
+XC1 Vg Vfg SVaricap w=7.0e-6 l=7.0e-6 m=1
+.ends
+
