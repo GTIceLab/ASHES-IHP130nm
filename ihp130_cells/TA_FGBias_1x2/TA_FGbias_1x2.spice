@@ -1,0 +1,54 @@
+* NGSPICE file created from TA_FGbias_1x2.ext - technology: ihp-sg13g2
+
+.subckt TA_FGbias_1x2 Vin_P[1] Vd_P[0] Vin_M[0] GND Vd_P[1] Vin_M[1] Vin_P[0] VTUN
++ Vg VINJ Vsel VDD OUTPUT[0] OUTPUT[1]
+X0 a_n3754_2316# Vg SVaricap l=0.5u w=1.06u
+X1 a_n1708_3254# a_n3754_3144# VDD VINJ sg13_hv_pmos ad=0.38255p pd=2.52333u as=0.6687p ps=3.91u w=2u l=2u
+**devattr s=20000,500 d=28800,944
+X2 a_n1958_2450# a_n3754_2316# Vd_P[1] VINJ sg13_hv_pmos ad=0 pd=0 as=0.1911p ps=1.76u w=0.42u l=0.5u
+**devattr s=6384,320 d=3948,178
+X3 a_152_3154# a_152_3154# VDD VDD sg13_lv_pmos ad=0.7069p pd=3.7u as=0.33435p ps=1.955u w=1u l=0.6u
+**devattr s=10000,300 d=15600,556
+X4 VINJ Vsel a_n1958_2450# VINJ sg13_hv_pmos ad=0.7632p pd=2.84u as=0 ps=0 w=0.42u l=0.5u
+**devattr s=3948,178 d=12768,388
+X5 OUTPUT[0] a_152_2260# VDD VDD sg13_lv_pmos ad=0.39p pd=2.78u as=0.33435p ps=1.955u w=1u l=0.6u
+**devattr s=10000,300 d=13600,536
+X6 a_n1958_3048# Vsel VINJ VINJ sg13_hv_pmos ad=0 pd=0 as=0.7632p ps=2.84u w=0.42u l=0.5u
+**devattr s=12768,388 d=3696,172
+X7 a_n678_2340# a_n678_2340# GND GND sg13_lv_nmos ad=0.34497p pd=2.45333u as=0.90502p ps=3.99u w=1u l=0.6u
+**devattr s=16400,564 d=16400,564
+X8 VDD a_152_3154# OUTPUT[1] VDD sg13_lv_pmos ad=0.33435p pd=1.955u as=0.3826p ps=2.78u w=1u l=0.6u
+**devattr s=14000,540 d=10000,300
+X9 Vd_P[0] a_n3754_3144# a_n1958_3048# VINJ sg13_hv_pmos ad=0.3456p pd=2.36u as=0 ps=0 w=0.42u l=0.5u
+**devattr s=3696,172 d=7560,348
+X10 a_n440_2260# a_n440_2260# GND GND sg13_lv_nmos ad=0.31823p pd=2.36u as=0.90502p ps=3.99u w=1u l=0.6u
+**devattr s=16400,564 d=16400,564
+X11 OUTPUT[0] a_n440_2260# GND GND sg13_lv_nmos ad=0.39p pd=2.78u as=0.90502p ps=3.99u w=1u l=0.6u
+**devattr s=16400,564 d=16400,564
+X12 VDD a_n3754_2316# a_n1708_2274# VINJ sg13_hv_pmos ad=0.6687p pd=3.91u as=0.3574p ps=2.44u w=2u l=2u
+**devattr s=32000,960 d=20000,500
+X13 VDD a_152_2260# a_152_2260# VDD sg13_lv_pmos ad=0.33435p pd=1.955u as=0.5567p ps=3.45u w=1u l=0.6u
+**devattr s=21200,612 d=10000,300
+X14 OUTPUT[1] a_n678_2340# GND GND sg13_lv_nmos ad=0.3826p pd=2.78u as=0.90502p ps=3.99u w=1u l=0.6u
+**devattr s=16400,564 d=16400,564
+X15 GND a_n910_2340# a_152_3154# GND sg13_lv_nmos ad=0.90502p pd=3.99u as=0.7069p ps=3.7u w=1u l=0.6u
+**devattr s=16400,564 d=16400,564
+X16 GND a_38_2476# a_152_2260# GND sg13_lv_nmos ad=0.90502p pd=3.99u as=0.5567p ps=3.45u w=1u l=0.6u
+**devattr s=16400,564 d=16400,564
+X17 GND a_38_2476# a_38_2476# GND sg13_lv_nmos ad=0.90502p pd=3.99u as=2.1531p ps=14.6u w=1u l=0.6u
+**devattr s=16400,564 d=16400,564
+X18 GND a_n910_2340# a_n910_2340# GND sg13_lv_nmos ad=0.90502p pd=3.99u as=0.33993p ps=2.42333u w=1u l=0.6u
+**devattr s=16400,564 d=16400,564
+X19 a_n678_2340# Vin_P[0] a_n1708_3254# VDD sg13_lv_pmos ad=1.72483p pd=12.26667u as=0.95637p ps=6.30833u w=5u l=0.15u
+**devattr s=45000,1090 d=82000,2164
+X20 a_n208_2260# Vin_M[1] a_n1708_2274# VDD sg13_lv_pmos ad=0 pd=0 as=0.8935p ps=6.1u w=5u l=0.15u
+**devattr s=45000,1090 d=82000,2164
+X21 a_n3754_3144# VTUN SVaricap l=0.5u w=0.5u
+X22 a_n3754_3144# Vg SVaricap l=0.5u w=1.11u
+X23 a_n3754_2316# VTUN SVaricap l=0.5u w=0.5u
+X24 a_n1708_3254# Vin_M[0] a_n910_2340# VDD sg13_lv_pmos ad=0.95637p pd=6.30833u as=1.69967p ps=12.11667u w=5u l=0.15u
+**devattr s=82000,2164 d=45000,1090
+X25 a_n1708_2274# Vin_P[1] a_n440_2260# VDD sg13_lv_pmos ad=0.8935p pd=6.1u as=1.59117p ps=11.8u w=5u l=0.15u
+**devattr s=82000,2164 d=45000,1090
+.ends
+
